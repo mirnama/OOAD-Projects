@@ -9,7 +9,6 @@ import java.util.ArrayList;
  * no-one will work more than three days in a row
  *
  */
-
 public class Staff {
     protected String employeeName;
     protected Float damagePercetage;
