@@ -1,3 +1,4 @@
+package Store;
 /*
 * This is the store class
 *The store keeps all money for buying merchandise and accepting money from Customers in a Cash Register.
@@ -17,15 +18,15 @@
  */
 
 
+import Store.Staff.*;
 import java.util.ArrayList;
-import Staff.*;
 
 public class Store {
     /*
     * theses are the variables for the store class
     * subject to change *
     -cashReg: float
-    -merchandise: Item
+    -merchandise: Store.Item
     -staffMembers: Velma, Shaggy
     -workingStaff: list
     -totalBankWithdrawl: int
@@ -35,7 +36,7 @@ public class Store {
      */
 
 
-    private float cashReg;
+    protected float cashReg;
     private int dayCount;
     private int customerCount, totalBankWithdrawl;
     private ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma, Shaggy
@@ -43,8 +44,8 @@ public class Store {
     ArrayList<Item> merchandise; // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
-        staffMembers.add(new Clerk("Velma"));
-        staffMembers.add(new Clerk("Shaggy"));
+        this.staffMembers.add(new Clerk("Velma", 5));
+        this.staffMembers.add(new Clerk("Shaggy", 20));
     }
     // getters and setters for the class objects and vars
     public float getCashReg ( ) {
@@ -95,11 +96,11 @@ public class Store {
         this.staffMembers = staffMembersSet;
     }
 
-    public ArrayList < Item > getMerchandise ( ) {
+    public ArrayList <Item> getMerchandise ( ) {
         return merchandise;
     }
 
-    public void setMerchandise (ArrayList < Item > merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
+    public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
         this.merchandise = merchandiseSet;
     }
 }
