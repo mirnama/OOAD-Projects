@@ -1,6 +1,6 @@
-
+package Staff;
 /*
-* Staff members Class
+* Staff.Staff members Class
 * randomly report for work each day the store is open during the simulation
 * no-one will work more than three days in a row
 *

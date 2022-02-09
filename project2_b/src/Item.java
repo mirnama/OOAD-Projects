@@ -26,6 +26,7 @@
         * Cables (length)
         * Strings (type)
  */
+
 public class Item {
     private String itemName, itemCondition;
     private Float purchasePrice;
