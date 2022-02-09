@@ -1,22 +1,35 @@
-package Staff;
+package Store.Staff;
+
+import Store.Staff.Jobs.Job;
+
+import java.util.ArrayList;
 /*
-* Staff.Staff members Class
-* randomly report for work each day the store is open during the simulation
-* no-one will work more than three days in a row
-*
+ * Store.Staff.Store.Staff members Class
+ * randomly report for work each day the store is open during the simulation
+ * no-one will work more than three days in a row
+ *
  */
 
 public class Staff {
-    private String employeeName;
-    private Float damagePercetage;
-    private int daysWorkedConsecutivley;
+    protected String employeeName;
+    protected Float damagePercetage;
+    protected int daysWorkedConsecutivley;
 
-    public Staff (String employeeName) {
+    protected ArrayList<Job> specialty_jobs;
+
+    public Staff (String employeeName, Float chance) {
         this.employeeName = employeeName;
+        this.daysWorkedConsecutivley = 0;
+        this.damagePercetage = chance;
+        this.specialty_jobs = new ArrayList();
     }
 
     public String getEmployeeName ( ) {
         return employeeName;
+    }
+
+    public ArrayList<Job> getSpecialtyJobs () {
+        return this.specialty_jobs;
     }
 
     public void setEmployeeName (String employeeNameSet)  { // I put set in the end to now which one the new var just a style we could change it
@@ -37,5 +50,17 @@ public class Staff {
 
     public void setDaysWorkedConsecutivley (int daysWorkedConsecutivleySet) {
         this.daysWorkedConsecutivley = daysWorkedConsecutivleySet;
+    }
+
+    public void arriveAtStore() {
+
+    }
+
+    public void leaveTheStore() {
+
+    }
+
+    public void openTheStore() {
+
     }
 }
