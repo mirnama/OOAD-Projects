@@ -1,3 +1,11 @@
+
+/*
+* Staff members Class
+* randomly report for work each day the store is open during the simulation
+* no-one will work more than three days in a row
+*
+ */
+
 public class Staff {
     private String employeeName;
     private Float damagePercetage;
@@ -11,7 +19,7 @@ public class Staff {
         return employeeName;
     }
 
-    public void setEmployeeName (String employeeNameSet) {
+    public void setEmployeeName (String employeeNameSet)  { // I put set in the end to now which one the new var just a style we could change it
         this.employeeName = employeeNameSet;
     }
 
@@ -19,7 +27,7 @@ public class Staff {
         return damagePercetage;
     }
 
-    public void setDamagePercetage (Float damagePercetageSet) {
+    public void setDamagePercetage (Float damagePercetageSet) { // I put set in the end to now which one the new var just a style we could change it
         this.damagePercetage = damagePercetageSet;
     }
 

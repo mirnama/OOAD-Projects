@@ -8,12 +8,31 @@
 -salePrice: float
 -daySold:
  */
+
+/*
+* Items are:
+    *Music(band,album){Paper Score, CD, Vinyl}
+    * Players {CD, Record Player, MP3}
+    * Instruments:
+        * Stringed (electric){Guitar, Bass, Mandolin}
+        * Wind Flute (type)
+        * Harmonica (key)
+    * Clothing:
+        * Hats (hatSize)
+        * Shirts (shirtSize)
+        * Bandanas
+    *Accessories:
+        *Practice Amps (wattage)
+        * Cables (length)
+        * Strings (type)
+ */
 public class Item {
     private String itemName, itemCondition;
     private Float purchasePrice;
     private Float listPrice, salePrice;
 
 
+    // construct
 
     public Item (String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice) {
         this.itemName = itemName;
@@ -23,11 +42,14 @@ public class Item {
         this.salePrice = salePrice;
     }
 
+
+
+    // getters and setters
     public String getItemName ( ) {
         return itemName;
     }
 
-    public void setItemName (String itemNameSet) {
+    public void setItemName (String itemNameSet) { // I put set in the end to now which one the new var just a style we could change it
         this.itemName = itemNameSet;
     }
 
@@ -35,7 +57,7 @@ public class Item {
         return itemCondition;
     }
 
-    public void setItemCondition (String itemConditionSet) {
+    public void setItemCondition (String itemConditionSet) { // I put set in the end to now which one the new var just a style we could change it
         this.itemCondition = itemConditionSet;
     }
 
