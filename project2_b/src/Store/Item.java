@@ -1,4 +1,4 @@
-/*
+package Store;/*
 - name: String
 - purchasePrice: float
 - listPrice: float
