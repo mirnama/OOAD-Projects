@@ -1,5 +1,3 @@
-package Accessories;
-
 import Accessories.Accessories;
 
 public class PracticeAmps extends Accessories {
