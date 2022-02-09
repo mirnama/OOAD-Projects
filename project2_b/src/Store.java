@@ -18,6 +18,7 @@
 
 
 import java.util.ArrayList;
+import Staff.*;
 
 public class Store {
     /*
@@ -37,10 +38,14 @@ public class Store {
     private float cashReg;
     private int dayCount;
     private int customerCount, totalBankWithdrawl;
-    private ArrayList<String> workingStaff; // for now, we have  Velma, Shaggy but that subject to change
-    private ArrayList<String> staffMembers;
+    private ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma, Shaggy
+    private ArrayList<Staff> staffMembers = new ArrayList<Staff>();
     ArrayList<Item> merchandise; // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
+    public Store() {
+        staffMembers.add(new Clerk("Velma"));
+        staffMembers.add(new Clerk("Shaggy"));
+    }
     // getters and setters for the class objects and vars
     public float getCashReg ( ) {
         return cashReg;
@@ -74,19 +79,19 @@ public class Store {
         this.totalBankWithdrawl = totalBankWithdrawlSet;
     }
 
-    public ArrayList < String > getWorkingStaff ( ) {
+    public ArrayList < Staff > getWorkingStaff ( ) {
         return workingStaff;
     }
 
-    public void setWorkingStaff (ArrayList < String > workingStaffSet) { // I put set in the end to now which one the new var just a style we could change it
+    public void setWorkingStaff (ArrayList < Staff > workingStaffSet) { // I put set in the end to now which one the new var just a style we could change it
         this.workingStaff = workingStaffSet;
     }
 
-    public ArrayList < String > getStaffMembers ( ) {
+    public ArrayList<Staff> getStaffMembers ( ) {
         return staffMembers;
     }
 
-    public void setStaffMembers (ArrayList < String > staffMembersSet) { // I put set in the end to now which one the new var just a style we could change it
+    public void setStaffMembers (ArrayList<Staff> staffMembersSet) { // I put set in the end to now which one the new var just a style we could change it
         this.staffMembers = staffMembersSet;
     }
 
