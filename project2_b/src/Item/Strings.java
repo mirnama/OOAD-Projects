@@ -1,3 +1,5 @@
+package Item;
+
 public class Strings extends Accessories {
     private String type;
     public String getType() {
