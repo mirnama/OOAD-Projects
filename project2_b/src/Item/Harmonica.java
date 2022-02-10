@@ -2,7 +2,9 @@ package Item;
 
 public class Harmonica extends Wind{
     private String harmonicaKey;
+
     public Harmonica(String harmonicaKey,String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
+
         super (itemName, itemCondition, purchasePrice, listPrice, salePrice);
         this.harmonicaKey = harmonicaKey;
     }
