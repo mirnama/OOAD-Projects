@@ -1,5 +1,4 @@
 package Item;
-
 /*
 - name: String
 - purchasePrice: float
@@ -30,14 +29,15 @@ package Item;
  */
 
 public class Item {
-    private String itemName, itemCondition;
+    private String itemName;
+    private int itemCondition;
     private Float purchasePrice;
     private Float listPrice, salePrice;
 
 
     // construct
 
-    public Item (String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice) {
+    public Item (String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice) {
         this.itemName = itemName;
         this.itemCondition = itemCondition;
         this.purchasePrice = purchasePrice;
@@ -56,11 +56,11 @@ public class Item {
         this.itemName = itemNameSet;
     }
 
-    public String getItemCondition ( ) {
+    public int getItemCondition ( ) {
         return itemCondition;
     }
 
-    public void setItemCondition (String itemConditionSet) { // I put set in the end to now which one the new var just a style we could change it
+    public void setItemCondition (int itemConditionSet) { // I put set in the end to now which one the new var just a style we could change it
         this.itemCondition = itemConditionSet;
     }
 

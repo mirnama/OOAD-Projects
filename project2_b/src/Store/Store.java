@@ -1,4 +1,5 @@
 package Store;
+
 /*
 * This is the store class
 *The store keeps all money for buying merchandise and accepting money from Customers in a Cash Register.
@@ -20,7 +21,7 @@ package Store;
 
 import Store.Staff.Clerk;
 import Store.Staff.Staff;
-
+import Item.*;
 import java.util.ArrayList;
 
 public class Store {
@@ -49,6 +50,10 @@ public class Store {
     public Store() {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
+        this.merchandise.add(new CD("CD1", 10,8.0f,10f,10f));
+        this.merchandise.add(new CD("CD2", 9,6.0f,10f,9f));
+        this.merchandise.add(new CD("CD3", 7,3f,7f,6.5f));
+
         // merchandise.add(s1);
     }
     // getters and setters for the class objects and vars
