@@ -7,7 +7,7 @@ public class Cable  extends Accessories {
     public void setLength(int newLength){
         length = newLength;
     }
-    Cable(int length, String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
+    Cable(int length, String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
         super(itemName, itemCondition, purchasePrice, listPrice, salePrice);
         this.length = length;
 

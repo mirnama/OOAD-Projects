@@ -3,7 +3,7 @@ package Item;
 public class Shirt extends Clothing {
     private int shirtSize;
 
-    public Shirt(int shirtSize,String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
+    public Shirt(int shirtSize, String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
 
         super(itemName,  itemCondition,  purchasePrice,  listPrice,  salePrice);
         this.shirtSize = shirtSize;
