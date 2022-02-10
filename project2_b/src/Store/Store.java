@@ -53,6 +53,16 @@ public class Store {
         this.merchandise.add(new CD("CD1", 10,8.0f,10f,10f));
         this.merchandise.add(new CD("CD2", 9,6.0f,10f,9f));
         this.merchandise.add(new CD("CD3", 7,3f,7f,6.5f));
+        this.merchandise.add(new Vinyl("Vinyl1", 7,3f,7f,6.5f));
+        this.merchandise.add(new Vinyl("Vinyl2", 7,3f,7f,6.5f));
+        this.merchandise.add(new Vinyl("Vinyl3", 7,3f,7f,6.5f));
+        this.merchandise.add(new Hat(3,"Hat1", 10,25f,35f,35f));
+        this.merchandise.add(new Hat(5,"Hat2", 7,23f,27f,26.5f));
+        this.merchandise.add(new Hat(4,"Hat3", 9,24f,34f,33.5f));
+        this.merchandise.add(new Shirt(4,"T-shirt1", 8,130f,170f,6.5f));
+        this.merchandise.add(new Shirt(0,"T-shirt2", 7,3f,7f,6.5f));
+        this.merchandise.add(new Shirt(41,"T-shirt3", 7,3f,7f,6.5f));
+
 
         // merchandise.add(s1);
     }
