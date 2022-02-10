@@ -18,7 +18,9 @@ package Store;
  */
 
 
-import Store.Staff.*;
+import Store.Staff.Clerk;
+import Store.Staff.Staff;
+
 import java.util.ArrayList;
 
 public class Store {
@@ -39,13 +41,15 @@ public class Store {
     protected float cashReg;
     private int dayCount;
     private int customerCount, totalBankWithdrawl;
-    private ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma, Shaggy
-    private ArrayList<Staff> staffMembers = new ArrayList<Staff>();
-    ArrayList<Item> merchandise; // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
+    protected ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma or Shaggy
+    private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
+    ArrayList<Item> merchandise = new ArrayList<Item>();
+    // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
+        // merchandise.add(s1);
     }
     // getters and setters for the class objects and vars
     public float getCashReg ( ) {
@@ -96,11 +100,11 @@ public class Store {
         this.staffMembers = staffMembersSet;
     }
 
-    public ArrayList <Item> getMerchandise ( ) {
+    public ArrayList <Item> getMerchandise ( ) { // needs to be type Item
         return merchandise;
     }
 
     public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
-        this.merchandise = merchandiseSet;
+        this.merchandise = merchandiseSet; // needs to be type item
     }
 }
