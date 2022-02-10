@@ -62,7 +62,10 @@ public class Store {
         this.merchandise.add(new Shirt(4,"T-shirt1", 8,130f,170f,6.5f));
         this.merchandise.add(new Shirt(0,"T-shirt2", 7,3f,7f,6.5f));
         this.merchandise.add(new Shirt(41,"T-shirt3", 7,3f,7f,6.5f));
+        this.merchandise.add(new Flute("standard","Montreux",10,500f,580f,566.66f));
+        this.merchandise.add(new Flute("Piccolo","The smallest",8,450f,550f,543f));
 
+        this.merchandise.add(new Flute("Plastic","The plastic flute ",10,45f,55f,54f));
 
         // merchandise.add(s1);
     }
