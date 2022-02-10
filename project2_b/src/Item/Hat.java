@@ -2,7 +2,7 @@ package Item;
 
 public class Hat extends Clothing{
     private int hatSize;
-    Hat(int hatSize,String itemName, String itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
+    Hat(int hatSize,String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
         super (itemName, itemCondition, purchasePrice, listPrice, salePrice);
         this.hatSize = hatSize;
     }

@@ -8,7 +8,6 @@ public class Main {
         Store store = new Store();
 
         ArrayList<Staff> hired = store.getStaffMembers();
-        System.out.println(hired.get(1).getEmployeeName());
         Staff shaggy =  hired.get(1);
         shaggy.work(store);
     }

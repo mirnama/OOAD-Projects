@@ -20,6 +20,7 @@ package Store;
 
 import Store.Staff.Clerk;
 import Store.Staff.Staff;
+import Item.*;
 
 import java.util.ArrayList;
 
@@ -49,7 +50,8 @@ public class Store {
     public Store() {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
-        // merchandise.add(s1);
+        Item s1 = new Shirt(0,"t-shirt", 3, 10.0f, 11.0f, 9.0f);
+        merchandise.add(s1);
     }
     // getters and setters for the class objects and vars
     public float getCashReg ( ) {
