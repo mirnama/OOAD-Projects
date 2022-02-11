@@ -78,7 +78,5 @@ public class OpenTheStore extends Job  {
             int r = rand.nextInt();
 
         }
-        System.out.println(p.getEmployeeName() + " locks up and goes home");
-        s.getWorkingStaff().remove(p);
     }
 }

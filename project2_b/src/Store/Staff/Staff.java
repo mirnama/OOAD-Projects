@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Staff {
     protected String employeeName;
-    protected Float damagePercetage;
+    protected float damagePercetage;
     protected int daysWorkedConsecutivley;
 
     protected ArrayList<Job> jobList = new ArrayList();
