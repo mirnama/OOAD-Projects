@@ -43,6 +43,7 @@ public class Store {
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
     ArrayList<Item> merchandise = new ArrayList<Item>();
     ArrayList<Item> soldItems = new ArrayList<Item>();
+    ArrayList<Order> orders = new ArrayList<Order>();
     // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
@@ -109,5 +110,8 @@ public class Store {
     }
     public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
         this.merchandise = merchandiseSet; // needs to be type item
+    }
+    public ArrayList<Order> getOrders() {
+        return orders;//returns order arraylist
     }
 }
