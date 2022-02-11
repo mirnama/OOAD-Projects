@@ -1,15 +1,10 @@
 package Store.Staff;
 
-import Store.Staff.Jobs.Job;
 import Store.Store;
+import Store.Staff.Jobs.*;
 
 import java.util.ArrayList;
-/*
- * Store.Staff.Store.Staff members Class
- * randomly report for work each day the store is open during the simulation
- * no-one will work more than three days in a row
- *
- */
+
 public class Staff {
     protected String employeeName;
     protected Float damagePercetage;
@@ -41,7 +36,9 @@ public class Staff {
     public void setDaysWorkedConsecutivley (int daysWorkedConsecutivleySet) {
         this.daysWorkedConsecutivley = daysWorkedConsecutivleySet;
     }
-
+    public ArrayList<Job> getJobList() {
+        return jobList;
+    }
     public void work(Store s) {
         for (int i=0; i<jobList.size(); i++) { // could be better priotity algorithm here
             jobList.get(i).do_job(s, this);

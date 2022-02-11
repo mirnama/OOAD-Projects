@@ -6,7 +6,7 @@ import Item.*;
 
 import java.util.Random;
 
-public class CleanTheStore implements Job  {
+public class CleanTheStore extends Job  {
     public void do_job(Store s, Staff p) {
         System.out.println("Cleaning");
         for (int i=0; i<s.getMerchandise().size(); i++) {

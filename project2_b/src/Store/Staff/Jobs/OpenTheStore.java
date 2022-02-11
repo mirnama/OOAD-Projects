@@ -9,7 +9,7 @@ import java.util.Random;
 
 
 
-public class OpenTheStore implements Job  {
+public class OpenTheStore extends Job  {
     public static Item findSubClass(Store s, int r) {
         ArrayList<Item> merch = s.getMerchandise();
 
