@@ -18,9 +18,7 @@ package Store;
  *
  */
 
-
-import Store.Staff.Clerk;
-import Store.Staff.Staff;
+import Store.Staff.*;
 import Item.*;
 import java.util.ArrayList;
 
@@ -37,7 +35,6 @@ public class Store {
     -customerCont: int
 
      */
-
 
     protected float cashReg;
     private int dayCount;
@@ -64,7 +61,6 @@ public class Store {
         this.merchandise.add(new Shirt(41,"T-shirt3", 7,3f,7f,6.5f));
         this.merchandise.add(new Flute("standard","Montreux",10,500f,580f,566.66f));
         this.merchandise.add(new Flute("Piccolo","The smallest",8,450f,550f,543f));
-
         this.merchandise.add(new Flute("Plastic","The plastic flute ",10,45f,55f,54f));
 
         // merchandise.add(s1);
