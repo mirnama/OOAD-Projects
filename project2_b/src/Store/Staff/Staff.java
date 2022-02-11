@@ -1,7 +1,7 @@
 package Store.Staff;
 
-import Store.Staff.Jobs.Job;
 import Store.Store;
+import Store.Staff.Jobs.*;
 
 import java.util.ArrayList;
 /*

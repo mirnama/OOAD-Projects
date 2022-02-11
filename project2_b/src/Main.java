@@ -1,5 +1,5 @@
-import Store.Staff.Staff;
-import Store.Store;
+import Store.Staff.*;
+import Store.*;
 
 import java.util.ArrayList;
 
