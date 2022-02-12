@@ -23,6 +23,7 @@ import Item.*;
 import Store.Staff.Jobs.Order;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Store {
     /*
@@ -43,9 +44,10 @@ public class Store {
     private int customerCount, totalBankWithdrawl;
     protected ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma or Shaggy
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
-    ArrayList<Item> merchandise = new ArrayList<Item>();
-    ArrayList<Item> soldItems = new ArrayList<Item>();
-    ArrayList< Order > orders = new ArrayList<Order>();
+    private ArrayList<Item> merchandise = new ArrayList<Item>();
+    private ArrayList<Item> soldItems = new ArrayList<Item>();
+    private ArrayList< Order > orders = new ArrayList<Order>();
+
     // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
@@ -115,5 +117,34 @@ public class Store {
     }
     public ArrayList<Order> getOrders() {
         return orders;//returns order arraylist
+    }
+    public void run(int days) {
+        for (int j=0; j<days; j++) {
+
+            Random r = new Random();
+            int working = r.nextInt(1); // maybe more than one eventually
+            System.out.println("Day:"+this.dayCount);
+            if (this.staffMembers.get(working).getDaysWorkedConsecutivley() >= 2) {
+                this.staffMembers.get(working).setDaysWorkedConsecutivley(0);
+                if (working==1) {
+                    this.workingStaff.add(this.staffMembers.get(0));
+                }
+                else {
+                    this.workingStaff.add(this.staffMembers.get(1));
+                }
+            }
+            else {
+                this.workingStaff.add(this.staffMembers.get(working));
+            }
+
+            for (int z=0; z<this.workingStaff.size(); z++) {
+                this.workingStaff.get(z).work(this);
+            }
+
+            dayCount+=1;
+        }
+    }
+    public void removeMerch(Item item) {
+        this.merchandise.remove(item);
     }
 }

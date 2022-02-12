@@ -92,38 +92,38 @@ public class OpenTheStore extends Job  {
         int sellers = rand.nextInt(4 - 1) + 1;
 
         for (int i=0; i<buyers; i++) {
-            // int r = rand.nextInt();
-            System.out.println(i);
-            String randSubtype = merch.get(rand.nextInt(14)).getClass().getName();
+            String randSubtype = subtypes.get(rand.nextInt(14));
 
             boolean stockFlag = false;
-            for (Item item : merch) {
-                if (item.getClass().getName() == randSubtype && !stockFlag) { // finds first item
+            for (int j=0; j<s.getMerchandise().size(); j++) {
+                Item item = s.getMerchandise().get(j);
+                if (item.getClass().getName()==randSubtype && stockFlag==false) { // finds first item
                     stockFlag = true;
                     double listChance = rand.nextDouble();
                     if (listChance < 0.5) {
-                        System.out.println(p.getEmployeeName()+ " sold a "+randSubtype.substring(5)+" for "+item.getListPrice()+"$.");
+                        System.out.println(p.getEmployeeName()+ " sold a "+randSubtype.substring(5)+" for "+item.getListPrice()+"$ to Customer "+i);
                         s.setCashReg(s.getCashReg()+item.getListPrice());
                         s.getSoldItems().add(item);
-                        merch.remove(item);
+                        s.removeMerch(item);
                     }
                     else {
                         double discountChance = rand.nextDouble();
                         if (discountChance < 0.25) {
                             float discountPrice = item.getListPrice()*0.9f;
-                            System.out.println(p.getEmployeeName()+" sold a "+randSubtype.substring(5)+" for "+discountPrice+"$ after a 10% discount.");
-                            s.setCashReg(discountPrice);
+                            System.out.println(p.getEmployeeName()+" sold a "+randSubtype.substring(5)+" for "+discountPrice+"$ after a 10% discount to Customer "+i);
+                            s.setCashReg(s.getCashReg()+discountPrice);
                             s.getSoldItems().add(item);
-                            merch.remove(item);
+                            s.removeMerch(item);
                         }
                     }
                 }
             }
+
             if (stockFlag==false) {
                 System.out.println("Customer "+i+" wanted to buy a "+randSubtype.substring(5)+" but none were in inventory, so they left");
             }
-            System.out.println("end loop");
         }
+
         for (int i=0; i<sellers; i++) {
             int itemCond = rand.nextInt(5);
 
@@ -133,18 +133,16 @@ public class OpenTheStore extends Job  {
 
             double buyChance = rand.nextDouble();
             if (buyChance < 0.5) {
-                System.out.println("buy full");
                 String type = buyItem(s, itemCond, askPrice);
-                System.out.println(p.getEmployeeName()+" bought a "+type+" for "+askPrice+"$");
+                System.out.println(p.getEmployeeName()+" bought a "+type.substring(5)+" for "+askPrice+"$");
             }
             else {
 
                 askPrice *= 1.1;
                 buyChance = rand.nextDouble();
                 if (buyChance < 0.75) {
-                    System.out.println("buy + discount");
                     String type = buyItem(s, itemCond, askPrice);
-                    System.out.println(p.getEmployeeName()+" bought a "+type+" for "+askPrice+"$ after a 10% increase.");
+                    System.out.println(p.getEmployeeName()+" bought a "+type.substring(5)+" for "+askPrice+"$ after a 10% increase.");
                 }
                 else {
                     System.out.println(p.getEmployeeName()+" bought notihing from customer");

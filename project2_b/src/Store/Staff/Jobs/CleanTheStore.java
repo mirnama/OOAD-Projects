@@ -8,13 +8,12 @@ import java.util.Random;
 
 public class CleanTheStore extends Job  {
     public void do_job(Store s, Staff p) {
-        System.out.println("Cleaning");
         Random rand = new Random();
         double breakChance = rand.nextDouble();
         if (breakChance < p.getDamagePercetage()) {
             Item item = s.getMerchandise().get(rand.nextInt(s.getMerchandise().size()));
             int itemCond = item.getItemCondition();
-            if (itemCond==0) {
+            if (itemCond==1) {
                 System.out.println("Oops, " + p.getEmployeeName() + " broke a " + item.getItemName());
                 s.getMerchandise().remove(item);
             }
