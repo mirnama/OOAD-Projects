@@ -115,7 +115,7 @@ public class PlaceAnOrder extends Job{
                 break;
         }
         //print confirming order
-        System.out.println(p.getEmployeeName() + "bought 3" + classNames[itemId] + "for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
+        System.out.println(p.getEmployeeName() + " bought 3 " + classNames[itemId] + " for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
 
     }
 }

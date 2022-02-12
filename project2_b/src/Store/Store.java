@@ -20,6 +20,8 @@ package Store;
 
 import Store.Staff.*;
 import Item.*;
+import Store.Staff.Jobs.Order;
+
 import java.util.ArrayList;
 
 public class Store {
@@ -43,7 +45,7 @@ public class Store {
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
     ArrayList<Item> merchandise = new ArrayList<Item>();
     ArrayList<Item> soldItems = new ArrayList<Item>();
-    ArrayList<Order> orders = new ArrayList<Order>();
+    ArrayList< Order > orders = new ArrayList<Order>();
     // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
