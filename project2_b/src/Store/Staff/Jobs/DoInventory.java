@@ -24,7 +24,7 @@ public class DoInventory extends Job {
             //if class name is not found we place an order for an item of that class
             if (!found){
                 for (int j = 0; j < s.getOrders().size(); j++){
-                    className = s.getMerchandise().get(j).getClass().getName();
+                    className = s.getOrders().get(j).getClass().getName();
                     if(className.equals(classNames[i])){
                         ordered = true;
                     }
