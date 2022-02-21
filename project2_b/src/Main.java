@@ -1,6 +1,6 @@
 import Store.Staff.*;
 import Store.*;
-
+import Store.Store;
 import java.util.ArrayList;
 
 public class Main {
