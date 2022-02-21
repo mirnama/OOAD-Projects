@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Accessories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Bandanas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Bass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/CD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Cable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/CdPlayers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Clothing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Flute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Guitar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Harmonica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Hat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Instrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/MP3Players.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Mandolin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/PracticeAmps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/RecordPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Shirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Stringed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Vinyl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/Wind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Customers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Clerk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/ArriveAtStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CheckRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CleanTheStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/GoToBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/LeaveTheStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/PlaceAnOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Staff/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project2_b/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../project2_b/.idea/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="25QiOFxesA30MOrjSWIhkSh7eZa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="project_3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="" />
+      <created>1645465676970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645465676970</updated>
+      <workItem from="1645465678214" duration="758000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
