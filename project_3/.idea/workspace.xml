@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Item/Cassette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/CassettePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/Saxophone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/gigBag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/CdPlayers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/CdPlayers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/MP3Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/MP3Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Music.java" afterDir="false" />
-    </list>
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Creat the new add classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,8 +69,23 @@
       <updated>1645465676970</updated>
       <workItem from="1645465678214" duration="1567000" />
       <workItem from="1645482874083" duration="49000" />
-      <workItem from="1645482927648" duration="1290000" />
+      <workItem from="1645482927648" duration="1657000" />
     </task>
+    <task id="LOCAL-00001" summary="Creat the new add classes">
+      <created>1645484689206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645484689206</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Creat the new add classes">
+      <created>1645484725459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645484725459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Creat the new add classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creat the new add classes" />
   </component>
 </project>
