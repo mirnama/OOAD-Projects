@@ -4,7 +4,7 @@ public class Music extends Item{
     private String band;
     private String album;
 
-    public Music (String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice, String band, String album) {
+    public Music (String itemName, int itemCondition, double purchasePrice, double listPrice, double salePrice, String band, String album) {
         super(itemName, itemCondition, purchasePrice, listPrice, salePrice);
         this.band = band;
         this.album = album;
