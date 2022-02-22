@@ -19,11 +19,10 @@ package Store;
  */
 
 import Store.Staff.*;
-import Item.*;
-import Store.Staff.Jobs.Order;
 
 import java.util.ArrayList;
 import java.util.Random;
+import Item.Inventory;
 
 public class Store {
     /*
@@ -38,40 +37,19 @@ public class Store {
     -customerCont: int
 
      */
-
+    private Inventory inventory = new Inventory();
     protected float cashReg;
     private int dayCount;
     private int customerCount, totalBankWithdrawl;
     protected ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma or Shaggy
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
-    private ArrayList<Item> merchandise = new ArrayList<Item>();
-    private ArrayList<Item> soldItems = new ArrayList<Item>();
-    private ArrayList< Order > orders = new ArrayList<Order>();
 
-    // arraylist to hold the different items (3 CDs, 3 Shirts, 3 Guitars, etc.)
 
     public Store() {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
-        this.merchandise.add(new CD("CD1", 5,8.0f,10f,10f));
-        this.merchandise.add(new CD("CD2", 4,6.0f,10f,9f));
-        this.merchandise.add(new CD("CD3", 3,3f,7f,6.5f));
-        this.merchandise.add(new Vinyl("Vinyl1", 5,3f,7f,6.5f));
-        this.merchandise.add(new Vinyl("Vinyl2", 5,3f,7f,6.5f));
-        this.merchandise.add(new Vinyl("Vinyl3", 2,3f,7f,6.5f));
-        this.merchandise.add(new Hat(3,"Hat1", 1,25f,35f,35f));
-        this.merchandise.add(new Hat(5,"Hat2", 3,23f,27f,26.5f));
-        this.merchandise.add(new Hat(4,"Hat3", 3,24f,34f,33.5f));
-        this.merchandise.add(new Shirt(4,"T-shirt1", 4,130f,170f,6.5f));
-        this.merchandise.add(new Shirt(0,"T-shirt2", 4,3f,7f,6.5f));
-        this.merchandise.add(new Shirt(41,"T-shirt3", 4,3f,7f,6.5f));
-        this.merchandise.add(new Flute("standard","Montreux",5,500f,580f,566.66f));
-        this.merchandise.add(new Flute("Piccolo","The smallest",1,450f,550f,543f));
-        this.merchandise.add(new Flute("Plastic","The plastic flute ",5,45f,55f,54f));
-
         // merchandise.add(s1);
     }
-    // getters and setters for the class objects and vars
     public float getCashReg ( ) {
         return cashReg;
     }
@@ -96,7 +74,7 @@ public class Store {
     public void setTotalBankWithdrawl (int totalBankWithdrawlSet) { // I put set in the end to now which one the new var just a style we could change it
         this.totalBankWithdrawl = totalBankWithdrawlSet;
     }
-    public ArrayList <Item> getSoldItems() {return soldItems;}
+
     public ArrayList < Staff > getWorkingStaff ( ) {
         return workingStaff;
     }
@@ -109,15 +87,7 @@ public class Store {
     public void setStaffMembers (ArrayList<Staff> staffMembersSet) { // I put set in the end to now which one the new var just a style we could change it
         this.staffMembers = staffMembersSet;
     }
-    public ArrayList <Item> getMerchandise ( ) { // needs to be type Item
-        return merchandise;
-    }
-    public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
-        this.merchandise = merchandiseSet; // needs to be type item
-    }
-    public ArrayList<Order> getOrders() {
-        return orders;//returns order arraylist
-    }
+    public Inventory getInventory() {return inventory;}
     public void run(int days) {
         for (int j=0; j<days; j++) {
 
@@ -143,8 +113,5 @@ public class Store {
 
             dayCount+=1;
         }
-    }
-    public void removeMerch(Item item) {
-        this.merchandise.remove(item);
     }
 }
