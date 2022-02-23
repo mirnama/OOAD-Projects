@@ -2,7 +2,7 @@ package Item;
 
 public class Mandolin extends Stringed{
 
-    public Mandolin(Boolean isElectric, String itemName, int itemCondition, Float purchasePrice, Float listPrice, Float salePrice){
+    public Mandolin(Boolean isElectric, String itemName, int itemCondition, double purchasePrice, double listPrice, double salePrice){
 
         super(isElectric, itemName, itemCondition, purchasePrice, listPrice, salePrice);
     }

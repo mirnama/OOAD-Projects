@@ -4,10 +4,7 @@ import Store.Staff.Staff;
 import Store.Store;
 import Item.*;
 
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.*;
-
 
 
 public class OpenTheStore extends Job  {
@@ -33,7 +30,7 @@ public class OpenTheStore extends Job  {
                 } else {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
-                        float discountPrice = item.getListPrice() * 0.9f;
+                        double discountPrice = item.getListPrice() * 0.9f;
                         System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + discountPrice + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
                         inv.addSold(item);
@@ -52,7 +49,7 @@ public class OpenTheStore extends Job  {
 
             int min = 1+item.getItemCondition();
             int max = 6+item.getItemCondition();
-            float askPrice = rand.nextInt(max - min) + min;
+            int askPrice = rand.nextInt(max - min) + min;
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
