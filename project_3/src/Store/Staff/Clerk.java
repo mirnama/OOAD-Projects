@@ -19,10 +19,10 @@ public class Clerk extends Staff {
             tune = new ElectronicTune();
         }
         this.jobList.add(new ArriveAtStore(this.o));
-        // this.jobList.add(new CheckRegister());
-        //this.jobList.add(new DoInventory());
-        //this.jobList.add(new OpenTheStore());
-        //this.jobList.add(new CleanTheStore());
+        this.jobList.add(new CheckRegister(this.o));
+        this.jobList.add(new DoInventory(this.o));
+        this.jobList.add(new OpenTheStore(this.o));
+        this.jobList.add(new CleanTheStore(this.o));
         this.jobList.add(new LeaveTheStore(this.o));
     }
 

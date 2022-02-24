@@ -1,17 +1,14 @@
 package Store.Staff.Jobs;
-import Item.*;
+
 import Item.Inventory;
 import Store.Obersvables.Logger;
 import Store.Store;
 import Store.Staff.*;
-import Item.ItemDecorater;
-
-import java.util.ArrayList;
 
 public class DoInventory implements Job {
     private Logger obs = null;
 
-    DoInventory(Logger o) {
+    public DoInventory(Logger o) {
         registerObserver(o);
     }
     public void do_job(Store s, Staff p) {
@@ -19,16 +16,8 @@ public class DoInventory implements Job {
         boolean found = false;
         boolean ordered = false;
         String className = "";
-        ArrayList<Item> merch= inventory.getMerchandise();
-        //for loop that tunes all items in the merchandise
-        for (int i = 0; i < merch.size(); i++){
-            if (inventory.isStringed(merch.get(i)))
-                ((Clerk)p).getTune().do_tune((Stringed)(merch.get(i)));
-            else if (inventory.isWind(merch.get(i)))
-                ((Clerk)p).getTune().do_tune((Wind)(merch.get(i)));
-            else if (inventory.isPlayer(merch.get(i)) )
-                ((Clerk)p).getTune().do_tune((Player)(merch.get(i)));
-        }
+        int countOrders = 0;
+
         for(String subtype : inventory.getClassNames()) {
             found = inventory.subtypeExists(subtype);
             ordered = false;
@@ -42,10 +31,15 @@ public class DoInventory implements Job {
                 }
                 //creates and runs PlaceAnOrder Job
                 if(!ordered) {
-                    new PlaceAnOrder(obs).do_job(s, p, subtype);
+                    new PlaceAnOrder(obs).do_job(s, p, subtype); // +3 of that type
+                    countOrders += 3;
                 }
             }
         }
+        notifyObservers(inventory.getMerchandise().size()+" items in inventory.");
+        notifyObservers("$"+inventory.sumPurchasePrice()+" sum purchase price in inventory.");
+        notifyObservers(countOrders+" orders placed.");
+
     }
     public void registerObserver(Logger o) {
         obs = o;
@@ -53,8 +47,8 @@ public class DoInventory implements Job {
     public void removeObserver(Logger o) {
         obs = null;
     }
-    public void notifyObservers(String info, Store s) {
-        obs.update(info, s);
+    public void notifyObservers(String info) {
+        obs.update(info);
     }
     public void setLogger(Logger o) {
         obs = o;

@@ -95,7 +95,7 @@ public class Store {
     }
     public void run(int days) {
         for (int j=0; j<days; j++) {
-            Logger dayLogger = new ConcreteLogger();
+            Logger dayLogger = new ConcreteLogger(this);
 
             Random r = new Random();
             int working = r.nextInt(1); // maybe more than one eventually
