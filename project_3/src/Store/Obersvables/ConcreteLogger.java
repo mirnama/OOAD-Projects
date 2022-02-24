@@ -15,7 +15,6 @@ public class ConcreteLogger implements Logger {
         File tempFile = new File(path);
         boolean exists = tempFile.exists();
         if (exists == false) {
-            System.out.println("create file");
             current = new File(path);
         }
         else {
@@ -26,7 +25,6 @@ public class ConcreteLogger implements Logger {
 
     public void update(String info) {
         try {
-            System.out.println("Writing to file");
             FileWriter myWriter = new FileWriter(path, true);
             myWriter.write(info+"\n");
             myWriter.close();
