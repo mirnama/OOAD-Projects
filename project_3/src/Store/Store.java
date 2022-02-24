@@ -36,7 +36,6 @@ public class Store {
     -totalBankWithdrawl: int
     -dayCount: int
     -customerCont: int
-
      */
     private Inventory inventory = new Inventory();
     protected double cashReg;
