@@ -4,6 +4,9 @@ import Item.Inventory;
 import Store.Obersvables.Logger;
 import Store.Store;
 import Store.Staff.*;
+import Item.ItemDecorater;
+
+import java.util.ArrayList;
 
 public class DoInventory implements Job {
     private Logger obs = null;
@@ -16,6 +19,7 @@ public class DoInventory implements Job {
         boolean found = false;
         boolean ordered = false;
         String className = "";
+        ArrayList<Item> merch= inventory.getMerchandise();
         //for loop that tunes all items in the merchandise
         for (int i = 0; i < merch.size(); i++){
             if (inventory.isStringed(merch.get(i)))
