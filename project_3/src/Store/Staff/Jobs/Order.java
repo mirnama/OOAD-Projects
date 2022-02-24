@@ -4,11 +4,11 @@ import Store.*;
 import Store.Obersvables.Logger;
 
 public class Order {
-    private Item item;
+    private ItemDecorator itemDecorator;
     private int receiveDate;
-    //constructor for an order that takes in an item and a recieve date
-    public Order(Item item, int receiveDate, Store s){
-        this.item = item;
+    //constructor for an order that takes in an itemDecorator and a recieve date
+    public Order(ItemDecorator itemDecorator, int receiveDate, Store s){
+        this.itemDecorator = itemDecorator;
         this.receiveDate = s.getDayCount() + receiveDate;
     }
     //returns receive date
@@ -16,8 +16,8 @@ public class Order {
         return receiveDate;
     }
     //lowers receivedate by one
-    public Item getItem() {
-        return item;
+    public ItemDecorator getItem() {
+        return itemDecorator;
     }
     public void progressDate(){
         receiveDate -= 1;

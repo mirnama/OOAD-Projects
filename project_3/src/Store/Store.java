@@ -25,12 +25,12 @@ import java.util.ArrayList;
 import java.util.Random;
 import Item.Inventory;
 
-public class Store {
+public class Store implements StoreInterface {
     /*
     * theses are the variables for the store class
     * subject to change *
     -cashReg: float
-    -merchandise: Store.Item
+    -merchandise: Store.ItemDecorator
     -staffMembers: Velma, Shaggy
     -workingStaff: list
     -totalBankWithdrawl: int
