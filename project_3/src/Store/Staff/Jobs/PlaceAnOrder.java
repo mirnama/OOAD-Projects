@@ -7,7 +7,7 @@ import Store.Staff.Staff;
 public class PlaceAnOrder implements Job{
     private Logger obs = null;
 
-    PlaceAnOrder(Logger o) {
+    public PlaceAnOrder(Logger o) {
         registerObserver(o);
     }
     public void do_job(Store s, Staff p){
@@ -20,7 +20,7 @@ public class PlaceAnOrder implements Job{
         String classNames[] = {"Bandanas",  "Cable", "Flute", "Guitar", "Harmonica", "Hat", "Mandolin", "PracticeAmps", "Shirt", "Strings", "CD", "MP3Players", "CdPlayers", "Vinyl", "Bass", "RecordPlayer"};
         //switch on type of merchandise that needs to be ordered
         //adds order to stores order list and removes cash needed for order from cash register
-        Job cR = new CheckRegister();
+        Job cR = new CheckRegister(obs);
         cR.do_job(s, p);
         switch (subtype){
             case "Item.Bandanas":
@@ -122,6 +122,7 @@ public class PlaceAnOrder implements Job{
         }
         //print confirming order
         System.out.println(p.getEmployeeName() + " bought 3 " + subtype + " for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
+        // notifyObservers(); // handled in DoInventory
     }
 
     public void registerObserver(Logger o) {
@@ -130,8 +131,8 @@ public class PlaceAnOrder implements Job{
     public void removeObserver(Logger o) {
         obs = null;
     }
-    public void notifyObservers(String info, Store s) {
-        obs.update(info, s);
+    public void notifyObservers(String info) {
+        obs.update(info);
     }
     public void setLogger(Logger o) {
         obs = o;
