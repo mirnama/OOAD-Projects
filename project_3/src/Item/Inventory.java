@@ -60,6 +60,18 @@ public class Inventory { // singleton
     public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
         this.merchandise = merchandiseSet; // needs to be type item
     }
+    public boolean isStringed(Item item){
+        String itemType = item.getClass().getName();
+        return(itemType.equals("Item.Bass") || itemType.equals("Item.Guitar") || itemType.equals("Item.Mandolin"));
+    }
+    public boolean isWind(Item item){
+        String itemType = item.getClass().getName();
+        return (itemType.equals("Item.Flute") || itemType.equals("Item.Harmonica") || itemType.equals("Item.Saxophone"));
+    }
+    public boolean  isPlayer(Item item){
+        String itemType = item.getClass().getName();
+        return (itemType.equals("Item.CassettePlayer") || itemType.equals("Item.CdPlayers") || itemType.equals("Item.MP3Players") || itemType.equals("Item.RecordPlayer"));
+    }
     public Item getItemSubtype(String className) {
         for (int j = 0; j < this.merchandise.size(); j++) {
             className = this.merchandise.get(j).getClass().getName();

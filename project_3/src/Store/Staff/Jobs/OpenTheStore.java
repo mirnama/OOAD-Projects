@@ -33,7 +33,7 @@ public class OpenTheStore extends Job  {
                 } else {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
-                        float discountPrice = item.getListPrice() * 0.9f;
+                        double discountPrice = item.getListPrice() * 0.9f;
                         System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + discountPrice + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
                         inv.addSold(item);
