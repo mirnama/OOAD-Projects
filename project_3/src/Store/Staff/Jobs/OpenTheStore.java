@@ -1,5 +1,6 @@
 package Store.Staff.Jobs;
 
+import Store.Obersvables.Logger;
 import Store.Staff.Staff;
 import Store.Store;
 import Item.*;
@@ -7,7 +8,11 @@ import Item.*;
 import java.util.Random;
 
 
-public class OpenTheStore extends Job  {
+public class OpenTheStore implements Job  {
+    private Logger obs = null;
+    OpenTheStore(Logger o) {
+        registerObserver(o);
+    }
 
     public void do_job(Store s, Staff p) {
         System.out.println("Opening the store");
@@ -68,5 +73,17 @@ public class OpenTheStore extends Job  {
                 }
             }
         }
+    }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }

@@ -2,7 +2,7 @@ package Store.Staff;
 
 import Store.Store;
 import Store.Staff.Jobs.*;
-
+import Store.Obersvables.Logger;
 import java.util.ArrayList;
 /*
  * Store.Staff.Store.Staff members Class
@@ -14,6 +14,7 @@ public class Staff {
     protected String employeeName;
     protected Float damagePercetage;
     protected int daysWorkedConsecutivley;
+    protected Logger o;
 
     protected ArrayList<Job> jobList = new ArrayList();
 
@@ -21,6 +22,7 @@ public class Staff {
         this.employeeName = employeeName;
         this.daysWorkedConsecutivley = 0;
         this.damagePercetage = chance;
+        this.o = null;
     }
 
     public String getEmployeeName ( ) {
@@ -41,7 +43,12 @@ public class Staff {
     public void setDaysWorkedConsecutivley (int daysWorkedConsecutivleySet) {
         this.daysWorkedConsecutivley = daysWorkedConsecutivleySet;
     }
-
+    public void setLogger(Logger o) {
+        this.o = o;
+        for (Job j : jobList) {
+            j.setLogger(this.o);
+        }
+    }
     public void work(Store s) {
         for (int i=0; i<jobList.size(); i++) { // could be better priotity algorithm here
             jobList.get(i).do_job(s, this);
