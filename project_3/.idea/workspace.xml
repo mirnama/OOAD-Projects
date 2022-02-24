@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Creat new subclass">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Latest work">
+      <change afterPath="$PROJECT_DIR$/src/Item/ItemDecorater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item/ItemInter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Cassette.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/CdPlayers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/MP3Players.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/ArriveAtStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/CheckRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/CleanTheStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/DoInventory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/GoToBank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/LeaveTheStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/OpenTheStore$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/OpenTheStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/PlaceAnOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/MP3Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/MP3Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Mandolin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Mandolin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/PracticeAmps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/PracticeAmps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/RecordPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/RecordPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Shirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Shirt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Vinyl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Vinyl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/CheckRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CheckRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/CleanTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CleanTheStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Accessories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Accessories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Clothing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Clothing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -117,7 +110,8 @@
       <workItem from="1645482874083" duration="49000" />
       <workItem from="1645482927648" duration="4080000" />
       <workItem from="1645498362618" duration="370000" />
-      <workItem from="1645640784426" duration="2782000" />
+      <workItem from="1645640784426" duration="5884000" />
+      <workItem from="1645676570468" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the new add classes">
       <created>1645484689206</created>
@@ -147,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645497111400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Latest work">
+      <created>1645644080906</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645644080906</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +171,7 @@
     <MESSAGE value="Creat the new add classes" />
     <MESSAGE value="Creat new branch" />
     <MESSAGE value="Creat new subclass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creat new subclass" />
+    <MESSAGE value="Latest work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest work" />
   </component>
 </project>
