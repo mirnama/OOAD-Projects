@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Creat new branch">
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Creat new subclass">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Cassette.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/CdPlayers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/MP3Players.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/ArriveAtStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/CheckRegister.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/CleanTheStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/DoInventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/GoToBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/LeaveTheStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/OpenTheStore$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/OpenTheStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/PlaceAnOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/MP3Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/MP3Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Mandolin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Mandolin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/PracticeAmps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/PracticeAmps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/RecordPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/RecordPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Shirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Shirt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Vinyl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Vinyl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/CheckRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CheckRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/CleanTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/CleanTheStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +55,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -40,9 +76,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -76,7 +115,9 @@
       <updated>1645465676970</updated>
       <workItem from="1645465678214" duration="1567000" />
       <workItem from="1645482874083" duration="49000" />
-      <workItem from="1645482927648" duration="2989000" />
+      <workItem from="1645482927648" duration="4080000" />
+      <workItem from="1645498362618" duration="370000" />
+      <workItem from="1645640784426" duration="2782000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the new add classes">
       <created>1645484689206</created>
@@ -99,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645485125694</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creat new subclass">
+      <created>1645497111400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645497111400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +169,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Creat the new add classes" />
     <MESSAGE value="Creat new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creat new branch" />
+    <MESSAGE value="Creat new subclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creat new subclass" />
   </component>
 </project>

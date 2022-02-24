@@ -1,6 +1,8 @@
 package Store.Staff.Jobs;
 import Item.*;
 import Store.*;
+import Store.Obersvables.Logger;
+
 public class Order {
     private Item item;
     private int receiveDate;
@@ -20,4 +22,8 @@ public class Order {
     public void progressDate(){
         receiveDate -= 1;
     }
+
+    public void registerObserver(Logger o) {}
+    public void removeObserver(Logger o) {}
+    public void notifyObservers(Logger o) {}
 }

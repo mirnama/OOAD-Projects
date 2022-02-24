@@ -1,16 +1,18 @@
 package Store.Staff.Jobs;
-
-import Item.Inventory;
 import Item.*;
+import Item.Inventory;
+import Store.Obersvables.Logger;
 import Store.Store;
 import Store.Staff.*;
 
-import java.util.ArrayList;
+public class DoInventory implements Job {
+    private Logger obs = null;
 
-public class DoInventory extends Job {
+    DoInventory(Logger o) {
+        registerObserver(o);
+    }
     public void do_job(Store s, Staff p) {
         Inventory inventory = s.getInventory();
-        ArrayList<Item> merch =  inventory.getMerchandise();
         boolean found = false;
         boolean ordered = false;
         String className = "";
@@ -26,7 +28,6 @@ public class DoInventory extends Job {
         for(String subtype : inventory.getClassNames()) {
             found = inventory.subtypeExists(subtype);
             ordered = false;
-
             //if class name is not found we place an order for an item of that class
             if (!found){
                 for (int j = 0; j < inventory.getOrders().size(); j++){
@@ -34,13 +35,24 @@ public class DoInventory extends Job {
                     if(className.equals(subtype)){
                         ordered = true;
                     }
-
                 }
                 //creates and runs PlaceAnOrder Job
                 if(!ordered) {
-                    new PlaceAnOrder().do_job(s, p, subtype);
+                    new PlaceAnOrder(obs).do_job(s, p, subtype);
                 }
             }
         }
+    }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }

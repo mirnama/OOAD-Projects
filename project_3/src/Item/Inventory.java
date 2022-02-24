@@ -97,7 +97,7 @@ public class Inventory { // singleton
         Random rand = new Random();
         int itemCond = rand.nextInt(5);
         Item item;
-        float purchasePrice = (float)(Math.random() * 200) + 1.00f;
+        double purchasePrice = (double) (Math.random() * 200) + 1.00f;
         switch (subtype){ // would have to implement randomness here, we should be doing it in the constructor call of items
             case "Item.Bandanas":
                 item = new Bandanas("Random Bandana", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);

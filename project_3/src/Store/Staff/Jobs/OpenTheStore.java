@@ -1,16 +1,18 @@
 package Store.Staff.Jobs;
 
+import Store.Obersvables.Logger;
 import Store.Staff.Staff;
 import Store.Store;
 import Item.*;
 
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.*;
 
 
-
-public class OpenTheStore extends Job  {
+public class OpenTheStore implements Job  {
+    private Logger obs = null;
+    OpenTheStore(Logger o) {
+        registerObserver(o);
+    }
 
     public void do_job(Store s, Staff p) {
         System.out.println("Opening the store");
@@ -52,7 +54,7 @@ public class OpenTheStore extends Job  {
 
             int min = 1+item.getItemCondition();
             int max = 6+item.getItemCondition();
-            float askPrice = rand.nextInt(max - min) + min;
+            int askPrice = rand.nextInt(max - min) + min;
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
@@ -72,4 +74,17 @@ public class OpenTheStore extends Job  {
             }
         }
     }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
+    }
 }
+
