@@ -1,10 +1,16 @@
 package Store.Staff.Jobs;
 
 import Item.Inventory;
+import Store.Obersvables.Logger;
 import Store.Store;
 import Store.Staff.*;
 
-public class DoInventory extends Job {
+public class DoInventory implements Job {
+    private Logger obs = null;
+
+    DoInventory(Logger o) {
+        registerObserver(o);
+    }
     public void do_job(Store s, Staff p) {
         Inventory inventory = s.getInventory();
         boolean found = false;
@@ -24,9 +30,21 @@ public class DoInventory extends Job {
                 }
                 //creates and runs PlaceAnOrder Job
                 if(!ordered) {
-                    new PlaceAnOrder().do_job(s, p, subtype);
+                    new PlaceAnOrder(obs).do_job(s, p, subtype);
                 }
             }
         }
+    }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }

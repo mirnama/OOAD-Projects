@@ -1,12 +1,19 @@
 package Store.Staff.Jobs;
 
+import Store.Obersvables.Logger;
 import Store.Staff.Staff;
 import Store.Store;
 import Item.*;
 
 import java.util.Random;
 
-public class CleanTheStore extends Job  {
+public class CleanTheStore implements Job  {
+    private Logger obs = null;
+
+    CleanTheStore(Logger o) {
+        registerObserver(o);
+    }
+
     public void do_job(Store s, Staff p) {
         Inventory inventory = s.getInventory();
         Random rand = new Random();
@@ -15,12 +22,7 @@ public class CleanTheStore extends Job  {
         int sizeInv = inventory.getMerchandise().size();
         if (sizeInv>0){
             if (breakChance < p.getDamagePercetage()) {
-                System.out.println("inti R ");
-                System.out.println("Size  "+inventory.getMerchandise().size());
-
-
                 int r = rand.nextInt(inventory.getMerchandise().size());
-                System.out.println("r is: "+r);
                 Item item = inventory.getMerchandise().get(r);
 
                 int itemCond = item.getItemCondition();
@@ -38,6 +40,17 @@ public class CleanTheStore extends Job  {
                 System.out.println("Nothing was broken!!");
             }
         }
-
+    }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }

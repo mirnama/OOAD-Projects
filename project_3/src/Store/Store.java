@@ -18,8 +18,9 @@ package Store;
  *
  */
 
+import Store.Obersvables.ConcreteLogger;
 import Store.Staff.*;
-
+import Store.Obersvables.Logger;
 import java.util.ArrayList;
 import java.util.Random;
 import Item.Inventory;
@@ -88,8 +89,14 @@ public class Store {
         this.staffMembers = staffMembersSet;
     }
     public Inventory getInventory() {return inventory;}
+    public void setStaffsLogger(Logger o) {
+        for (Staff s: workingStaff) {
+            s.setLogger(o);
+        }
+    }
     public void run(int days) {
         for (int j=0; j<days; j++) {
+            Logger dayLogger = new ConcreteLogger();
 
             Random r = new Random();
             int working = r.nextInt(1); // maybe more than one eventually
@@ -107,6 +114,7 @@ public class Store {
                 this.workingStaff.add(this.staffMembers.get(working));
             }
 
+            setStaffsLogger(dayLogger);
             for (int z=0; z<this.workingStaff.size(); z++) {
                 this.workingStaff.get(z).work(this);
             }

@@ -1,11 +1,20 @@
 package Store.Staff.Jobs;
 
+import Store.Obersvables.Logger;
 import Store.Store;
 import Store.Staff.*;
 import Item.Inventory;
 
-public class ArriveAtStore extends Job  {
+import java.util.ArrayList;
+
+public class ArriveAtStore implements Job  {
+    private Logger obs = null;
+    public ArriveAtStore(Logger o) {
+        registerObserver(o);
+    }
     public void do_job(Store s, Staff p) {
+        System.out.println(p.getEmployeeName()+" arrived.");
+        notifyObservers("ArriveAtStore test", s);
         Inventory inventory = s.getInventory();
 
         s.getWorkingStaff().add(p);
@@ -18,5 +27,17 @@ public class ArriveAtStore extends Job  {
                 i--;
             }
         }
+    }
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }

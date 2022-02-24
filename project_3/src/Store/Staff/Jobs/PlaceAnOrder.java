@@ -1,9 +1,15 @@
 package Store.Staff.Jobs;
 import Store.*;
 import Item.*;
+import Store.Obersvables.Logger;
 import Store.Staff.Staff;
 
-public class PlaceAnOrder extends Job{
+public class PlaceAnOrder implements Job{
+    private Logger obs = null;
+
+    PlaceAnOrder(Logger o) {
+        registerObserver(o);
+    }
     public void do_job(Store s, Staff p){
         System.out.println("doing Job");
     }
@@ -116,7 +122,19 @@ public class PlaceAnOrder extends Job{
         }
         //print confirming order
         System.out.println(p.getEmployeeName() + " bought 3 " + subtype + " for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
+    }
 
+    public void registerObserver(Logger o) {
+        obs = o;
+    }
+    public void removeObserver(Logger o) {
+        obs = null;
+    }
+    public void notifyObservers(String info, Store s) {
+        obs.update(info, s);
+    }
+    public void setLogger(Logger o) {
+        obs = o;
     }
 }
 
