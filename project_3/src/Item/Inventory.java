@@ -155,5 +155,12 @@ public class Inventory { // singleton
         }
         return flag;
     }
+    public int sumPurchasePrice() {
+        int sumPurchasePrice = 0;
+        for (Item i: merchandise) {
+            sumPurchasePrice += i.getPurchasePrice();
+        }
+        return sumPurchasePrice;
+    }
 
 }

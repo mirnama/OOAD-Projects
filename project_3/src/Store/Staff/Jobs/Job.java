@@ -8,6 +8,6 @@ public interface Job {
     public abstract void do_job(Store s, Staff p);
     public void registerObserver(Logger o);
     public void removeObserver(Logger o);
-    public void notifyObservers(String info, Store s);
+    public void notifyObservers(String info);
     public void setLogger(Logger o);
 }

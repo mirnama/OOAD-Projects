@@ -8,14 +8,14 @@ import java.util.ArrayList;
 
 public class GoToBank implements Job {
     private Logger obs = null;
-    GoToBank(Logger o) {
+    public GoToBank(Logger o) {
         registerObserver(o);
     }
     public void do_job(Store s, Staff p) {
-        notifyObservers("GotoBank test", s);
         System.out.println("Withdrawing $1000 from bank...");
         s.setCashReg(s.getCashReg() + 1000);
         System.out.println("Register now has $"+s.getCashReg());
+        notifyObservers("$"+String.format("%.2f", s.getCashReg())+" in register.");
     }
     public void registerObserver(Logger o) {
         obs = o;
@@ -23,8 +23,8 @@ public class GoToBank implements Job {
     public void removeObserver(Logger o) {
         obs = null;
     }
-    public void notifyObservers(String info, Store s) {
-        obs.update(info, s);
+    public void notifyObservers(String info) {
+        obs.update(info);
     }
     public void setLogger(Logger o) {
         obs = o;
