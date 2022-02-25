@@ -27,6 +27,7 @@ public class ConcreteLogger implements Logger {
         try {
             FileWriter myWriter = new FileWriter(path, true);
             myWriter.write(info+"\n");
+//            myWriter.write("--------------------------------------------------------------------------"+"\n");
             myWriter.close();
         } catch (IOException e) {
             System.out.println("A writer error occurred.");
