@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Added Decorators for StoreInterface and ItemInter">
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/activityFlowchart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project3UpDatedDigram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Added Daphne">
+      <change beforePath="$PROJECT_DIR$/src/Store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="mirnaM" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -88,6 +81,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -158,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645685653495</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Daphne">
+      <created>1645817346180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645817346180</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +172,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -183,6 +198,7 @@
     <MESSAGE value="Creat new subclass" />
     <MESSAGE value="Latest work" />
     <MESSAGE value="Added Decorators for StoreInterface and ItemInter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Decorators for StoreInterface and ItemInter" />
+    <MESSAGE value="Added Daphne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Daphne" />
   </component>
 </project>

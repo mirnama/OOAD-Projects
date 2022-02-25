@@ -122,7 +122,7 @@ public class PlaceAnOrder implements Job{
                 break;
         }
         //print confirming order
-        System.out.println(p.getEmployeeName() + " bought 3 " + subtype + " for: " +  String.format("%.2f", purchasePrice) + " and the order will be here in " + arrivalDate + " days.");
+        System.out.println(p.getEmployeeName() + " bought 3 " + subtype.substring(14) + " for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
         // notifyObservers(); // handled in DoInventory
     }
 
