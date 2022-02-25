@@ -13,7 +13,7 @@ public class CheckRegister implements Job {
     public void do_job(Store s, Staff p) {
         double cash = s.getCashReg();
         notifyObservers("$"+String.format("%.2f", cash)+" in register.");
-        System.out.println("Register has $"+cash);
+        System.out.println("Register has $"+String.format("%.2f", cash));
         if (cash<75) {
             GoToBank next = new GoToBank(obs);
             next.do_job(s,p);
