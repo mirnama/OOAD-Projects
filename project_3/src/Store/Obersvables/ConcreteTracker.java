@@ -40,7 +40,7 @@ public class ConcreteTracker implements Tracker {
     }
 
     public void display() {
-        System.out.println("Days:"+dayNum);
+        System.out.println("Days:"+(dayNum+1));
         System.out.println("Name   Sold    Purchased    Damaged");
         for (int i=0; i<tracker_order.size(); i++) {
             System.out.print(String.format("%-7s", tracker_order.get(i).getEmployeeName()));
