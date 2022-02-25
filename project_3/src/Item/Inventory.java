@@ -1,14 +1,14 @@
 package Item;
 
 import Store.Staff.Jobs.Order;
-import Item.*;
+
 import java.util.Random;
 
 import java.util.ArrayList;
 
 public class Inventory { // singleton
-    private ArrayList<Item> merchandise = new ArrayList<Item>();
-    private ArrayList<Item> soldItems = new ArrayList<Item>();
+    private ArrayList< ItemDecorator > merchandise = new ArrayList< ItemDecorator >();
+    private ArrayList< ItemDecorator > soldItemDecorators = new ArrayList< ItemDecorator >();
     private ArrayList<Order> orders = new ArrayList<Order>();
     private ArrayList<String> classNames = new ArrayList<String>();
 
@@ -30,49 +30,49 @@ public class Inventory { // singleton
         this.merchandise.add(new Flute("Piccolo","The smallest",1,450f,550f,543f));
         this.merchandise.add(new Flute("Plastic","The plastic flute ",5,45f,55f,54f));
 
-        this.classNames.add("Item.Bandanas");
-        this.classNames.add("Item.Cable");
-        this.classNames.add("Item.Flute");
-        this.classNames.add("Item.Guitar");
-        this.classNames.add("Item.Harmonica");
-        this.classNames.add("Item.Hat");
-        this.classNames.add("Item.Mandolin");
-        this.classNames.add("Item.PracticeAmps");
-        this.classNames.add("Item.Shirt");
-        this.classNames.add("Item.Strings");
-        this.classNames.add("Item.CD");
-        this.classNames.add("Item.MP3Players");
-        this.classNames.add("Item.CdPlayers");
-        this.classNames.add("Item.Vinyl");
-        this.classNames.add("Item.Bass");
-        this.classNames.add("Item.RecordPlayer");
+        this.classNames.add("ItemDecorator.Bandanas");
+        this.classNames.add("ItemDecorator.Cable");
+        this.classNames.add("ItemDecorator.Flute");
+        this.classNames.add("ItemDecorator.Guitar");
+        this.classNames.add("ItemDecorator.Harmonica");
+        this.classNames.add("ItemDecorator.Hat");
+        this.classNames.add("ItemDecorator.Mandolin");
+        this.classNames.add("ItemDecorator.PracticeAmps");
+        this.classNames.add("ItemDecorator.Shirt");
+        this.classNames.add("ItemDecorator.Strings");
+        this.classNames.add("ItemDecorator.CD");
+        this.classNames.add("ItemDecorator.MP3Players");
+        this.classNames.add("ItemDecorator.CdPlayers");
+        this.classNames.add("ItemDecorator.Vinyl");
+        this.classNames.add("ItemDecorator.Bass");
+        this.classNames.add("ItemDecorator.RecordPlayer");
     }
-    public ArrayList <Item> getSoldItems() {return soldItems;}
-    public ArrayList <Item> getMerchandise ( ) { // needs to be type Item
+    public ArrayList < ItemDecorator > getSoldItems() {return soldItemDecorators;}
+    public ArrayList < ItemDecorator > getMerchandise ( ) { // needs to be type ItemDecorator
         return merchandise;
     }
     public ArrayList<Order> getOrders() {
         return orders;//returns order arraylist
     }
-    public void removeMerch(Item item) {
-        this.merchandise.remove(item);
+    public void removeMerch(ItemDecorator itemDecorator) {
+        this.merchandise.remove(itemDecorator);
     }
-    public void setMerchandise (ArrayList <Item> merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
+    public void setMerchandise (ArrayList < ItemDecorator > merchandiseSet) { // I put set in the end to now which one the new var just a style we could change it
         this.merchandise = merchandiseSet; // needs to be type item
     }
-    public boolean isStringed(Item item){
-        String itemType = item.getClass().getName();
-        return(itemType.equals("Item.Bass") || itemType.equals("Item.Guitar") || itemType.equals("Item.Mandolin"));
+    public boolean isStringed(ItemDecorator itemDecorator){
+        String itemType = itemDecorator.getClass().getName();
+        return(itemType.equals("ItemDecorator.Bass") || itemType.equals("ItemDecorator.Guitar") || itemType.equals("ItemDecorator.Mandolin"));
     }
-    public boolean isWind(Item item){
-        String itemType = item.getClass().getName();
-        return (itemType.equals("Item.Flute") || itemType.equals("Item.Harmonica") || itemType.equals("Item.Saxophone"));
+    public boolean isWind(ItemDecorator itemDecorator){
+        String itemType = itemDecorator.getClass().getName();
+        return (itemType.equals("ItemDecorator.Flute") || itemType.equals("ItemDecorator.Harmonica") || itemType.equals("ItemDecorator.Saxophone"));
     }
-    public boolean  isPlayer(Item item){
-        String itemType = item.getClass().getName();
-        return (itemType.equals("Item.CassettePlayer") || itemType.equals("Item.CdPlayers") || itemType.equals("Item.MP3Players") || itemType.equals("Item.RecordPlayer"));
+    public boolean  isPlayer(ItemDecorator itemDecorator){
+        String itemType = itemDecorator.getClass().getName();
+        return (itemType.equals("ItemDecorator.CassettePlayer") || itemType.equals("ItemDecorator.CdPlayers") || itemType.equals("ItemDecorator.MP3Players") || itemType.equals("ItemDecorator.RecordPlayer"));
     }
-    public Item getItemSubtype(String className) {
+    public ItemDecorator getItemSubtype(String className) {
         for (int j = 0; j < this.merchandise.size(); j++) {
             className = this.merchandise.get(j).getClass().getName();
             if (className.equals(className)) {
@@ -84,73 +84,73 @@ public class Inventory { // singleton
     public ArrayList<String> getClassNames() {
         return classNames;
     }
-    public void addMerch(Item i) {
+    public void addMerch(ItemDecorator i) {
         this.merchandise.add(i);
     }
     public void addOrder(Order o) {
         this.orders.add(o);
     }
-    public void addSold(Item i) {
-        this.soldItems.add(i);
+    public void addSold(ItemDecorator i) {
+        this.soldItemDecorators.add(i);
     }
-    public Item createItem(String subtype) {
+    public ItemDecorator createItem(String subtype) {
         Random rand = new Random();
         int itemCond = rand.nextInt(5);
-        Item item;
+        ItemDecorator itemDecorator;
         double purchasePrice = (double) (Math.random() * 200) + 1.00f;
         switch (subtype){ // would have to implement randomness here, we should be doing it in the constructor call of items
-            case "Item.Bandanas":
-                item = new Bandanas("Random Bandana", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Bandanas":
+                itemDecorator = new Bandanas("Random Bandana", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Cable":
-                item = new Cable(2, "Random cable",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Cable":
+                itemDecorator = new Cable(2, "Random cable",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Flute":
-                item = new Flute("standard", "Random flute",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Flute":
+                itemDecorator = new Flute("standard", "Random flute",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Guitar":
-                item = new Guitar(true, "Random electric guitar",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Guitar":
+                itemDecorator = new Guitar(true, "Random electric guitar",itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Harmonica":
-                item = new Harmonica("G", "Random Harmonica", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Harmonica":
+                itemDecorator = new Harmonica("G", "Random Harmonica", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Hat":
-                item = new Hat(1, "Random Hat", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Hat":
+                itemDecorator = new Hat(1, "Random Hat", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Mandolin":
-                item = new Mandolin(false, "Random Mandolin", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Mandolin":
+                itemDecorator = new Mandolin(false, "Random Mandolin", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.PracticeAmps":
-                item = new PracticeAmps(100, "Random Practice Amp", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.PracticeAmps":
+                itemDecorator = new PracticeAmps(100, "Random Practice Amp", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Shirt":
-                item = new Shirt(3, "Random Shirt", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Shirt":
+                itemDecorator = new Shirt(3, "Random Shirt", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Strings":
-                item = new Strings("guitar String","Random Guitar String", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Strings":
+                itemDecorator = new Strings("guitar String","Random Guitar String", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.CD":
-                item = new CD( "Random CD", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.CD":
+                itemDecorator = new CD( "Random CD", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.MP3Players":
-                item = new MP3Players("Random MP3", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.MP3Players":
+                itemDecorator = new MP3Players("Random MP3", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.CdPlayers":
-                item = new CdPlayers("Random CD player", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.CdPlayers":
+                itemDecorator = new CdPlayers("Random CD player", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Vinyl":
-                item = new Vinyl("Random Vinyl Record", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Vinyl":
+                itemDecorator = new Vinyl("Random Vinyl Record", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.Bass":
-                item = new Bass(true, "Random Electric Bass", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.Bass":
+                itemDecorator = new Bass(true, "Random Electric Bass", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
-            case "Item.RecordPlayer":
-                item = new RecordPlayer("Black Record Player", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
+            case "ItemDecorator.RecordPlayer":
+                itemDecorator = new RecordPlayer("Black Record Player", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
             default:
-                item = null;
+                itemDecorator = null;
         }
-        return item;
+        return itemDecorator;
     }
     public String getStringSubtype() {
         Random rand = new Random();
@@ -169,7 +169,7 @@ public class Inventory { // singleton
     }
     public int sumPurchasePrice() {
         int sum = 0;
-        for (Item i : merchandise) {
+        for (ItemDecorator i : merchandise) {
             sum += i.getPurchasePrice();
         }
         return sum;

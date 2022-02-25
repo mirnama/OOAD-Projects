@@ -11,6 +11,5 @@ public interface ItemInter {
     public void setListPrice (double listPriceSet);
     public double getSalePrice ( );
     public void setSalePrice (double salePriceSet);
-    public boolean isTuned ( );
-    public void switchTuned ();
+
 }

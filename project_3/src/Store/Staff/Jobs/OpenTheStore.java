@@ -29,23 +29,23 @@ public class OpenTheStore implements Job  {
 
         for (int i=0; i<buyers; i++) {
             String randSubtype = inv.getStringSubtype();
-            Item item = inv.getItemSubtype(randSubtype);
-            if (item != null) {
+            ItemDecorator itemDecorator = inv.getItemSubtype(randSubtype);
+            if (itemDecorator != null) {
                 double listChance = rand.nextDouble();
                 if (listChance < 0.5) {
-                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + item.getListPrice() + "$ to Customer " + i);
-                    s.setCashReg(s.getCashReg() + item.getListPrice());
-                    inv.addSold(item);
-                    inv.removeMerch(item);
+                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + itemDecorator.getListPrice() + "$ to Customer " + i);
+                    s.setCashReg(s.getCashReg() + itemDecorator.getListPrice());
+                    inv.addSold(itemDecorator);
+                    inv.removeMerch(itemDecorator);
                     countItemsSold += 1;
                 } else {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
-                        double discountPrice = item.getListPrice() * 0.9f;
+                        double discountPrice = itemDecorator.getListPrice() * 0.9f;
                         System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + discountPrice + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
-                        inv.addSold(item);
-                        inv.removeMerch(item);
+                        inv.addSold(itemDecorator);
+                        inv.removeMerch(itemDecorator);
                         countItemsSold += 1;
                     }
                 }
@@ -58,16 +58,16 @@ public class OpenTheStore implements Job  {
         System.out.println("Sellers:"+sellers);
         for (int i=0; i<sellers; i++) {
             String randSubtype = inv.getStringSubtype();
-            Item item = inv.createItem(randSubtype);
+            ItemDecorator itemDecorator = inv.createItem(randSubtype);
 
-            int min = 1+item.getItemCondition();
-            int max = 6+item.getItemCondition();
+            int min = 1+ itemDecorator.getItemCondition();
+            int max = 6+ itemDecorator.getItemCondition();
             int askPrice = rand.nextInt(max - min) + min;
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
                 System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$");
-                inv.addMerch(item);
+                inv.addMerch(itemDecorator);
                 countItemsBought += 1;
             }
             else {
@@ -75,7 +75,7 @@ public class OpenTheStore implements Job  {
                 buyChance = rand.nextDouble();
                 if (buyChance < 0.75) {
                     System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$ after a 10% increase.");
-                    inv.addMerch(item);
+                    inv.addMerch(itemDecorator);
                     countItemsBought += 1;
                 }
                 else {
