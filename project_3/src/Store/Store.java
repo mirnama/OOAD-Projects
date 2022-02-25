@@ -48,6 +48,7 @@ public class Store implements StoreInterface {
     public Store() {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
+        this.staffMembers.add(new Clerk("Daphne", 10));
         // merchandise.add(s1);
     }
     public double getCashReg ( ) {
