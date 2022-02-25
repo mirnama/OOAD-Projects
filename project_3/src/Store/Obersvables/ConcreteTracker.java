@@ -33,8 +33,8 @@ public class ConcreteTracker implements Tracker {
             if (tracker_order.get(i)==p) {
                 ArrayList<Integer> temp = tracker.get(i);
                 temp.set(0, temp.get(0)+sold);
-                temp.set(0, temp.get(1)+purch);
-                temp.set(0, temp.get(2)+dmg);
+                temp.set(1, temp.get(1)+purch);
+                temp.set(2, temp.get(2)+dmg);
             }
         }
     }
