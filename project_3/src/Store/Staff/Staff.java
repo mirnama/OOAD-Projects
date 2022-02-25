@@ -2,7 +2,7 @@ package Store.Staff;
 
 import Store.Store;
 import Store.Staff.Jobs.*;
-import Store.Obersvables.Logger;
+import Store.Obersvables.*;
 import java.util.ArrayList;
 /*
  * Store.Staff.Store.Staff members Class
@@ -15,6 +15,7 @@ public class Staff {
     protected Float damagePercetage;
     protected int daysWorkedConsecutivley;
     protected Logger o;
+    protected Tracker t;
 
     protected ArrayList<Job> jobList = new ArrayList();
 
@@ -23,6 +24,7 @@ public class Staff {
         this.daysWorkedConsecutivley = 0;
         this.damagePercetage = chance;
         this.o = null;
+        this.t = null;
     }
 
     public String getEmployeeName ( ) {
@@ -47,6 +49,12 @@ public class Staff {
         this.o = o;
         for (Job j : jobList) {
             j.setLogger(this.o);
+        }
+    }
+    public void setTracker(Tracker t) {
+        this.t = t;
+        for (Job j : jobList) {
+            j.setTracker(this.t);
         }
     }
     public void work(Store s) {

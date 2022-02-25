@@ -21,8 +21,8 @@ public class Clerk extends Staff {
         this.jobList.add(new ArriveAtStore(this.o));
         this.jobList.add(new CheckRegister(this.o));
         this.jobList.add(new DoInventory(this.o));
-        this.jobList.add(new OpenTheStore(this.o));
-        this.jobList.add(new CleanTheStore(this.o));
+        this.jobList.add(new OpenTheStore(this.o, this.t));
+        this.jobList.add(new CleanTheStore(this.o, this.t));
         this.jobList.add(new LeaveTheStore(this.o));
     }
 
