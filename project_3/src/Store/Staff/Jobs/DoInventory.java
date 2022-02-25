@@ -69,6 +69,5 @@ public class DoInventory implements Job {
     public void notifyObserversTracker(Staff p, int sold, int purch, int dmg) {
         tr.update_tracker(p,sold,purch,dmg);
     }
-    public void notifyObservers(String info){}
     public void setTracker(Tracker t) {tr = t;}
 }
