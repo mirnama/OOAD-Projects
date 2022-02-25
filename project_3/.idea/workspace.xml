@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Latest work">
-      <change afterPath="$PROJECT_DIR$/src/Item/ItemDecorater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/ItemInter.java" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Added Decorators for StoreInterface and ItemInter">
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/activityFlowchart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/project3UpDatedDigram.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Accessories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Accessories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Clothing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Clothing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -82,6 +70,12 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Item" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
@@ -111,7 +105,9 @@
       <workItem from="1645482927648" duration="4080000" />
       <workItem from="1645498362618" duration="370000" />
       <workItem from="1645640784426" duration="5884000" />
-      <workItem from="1645676570468" duration="3149000" />
+      <workItem from="1645676570468" duration="7152000" />
+      <workItem from="1645812659575" duration="295000" />
+      <workItem from="1645813332932" duration="2029000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the new add classes">
       <created>1645484689206</created>
@@ -148,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645644080906</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Latest work">
+      <created>1645679886304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645679886304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Decorators for StoreInterface and ItemInter">
+      <created>1645685653495</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645685653495</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +182,7 @@
     <MESSAGE value="Creat new branch" />
     <MESSAGE value="Creat new subclass" />
     <MESSAGE value="Latest work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Latest work" />
+    <MESSAGE value="Added Decorators for StoreInterface and ItemInter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Decorators for StoreInterface and ItemInter" />
   </component>
 </project>
