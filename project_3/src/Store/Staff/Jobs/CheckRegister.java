@@ -1,6 +1,7 @@
 package Store.Staff.Jobs;
 
 import Store.Obersvables.Logger;
+import Store.Obersvables.Tracker;
 import Store.Store;
 import Store.Staff.*;
 
@@ -30,4 +31,9 @@ public class CheckRegister implements Job {
     public void setLogger(Logger o) {
         obs = o;
     }
+
+    public void registerObserverTracker(Tracker t) {}
+    public void removeObserverTracker(Tracker t) {}
+    public void notifyObserversTracker(Staff p, int sold, int purch, int dmg) {}
+    public void setTracker(Tracker t) {}
 }

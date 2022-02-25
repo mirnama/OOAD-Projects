@@ -20,7 +20,7 @@ package Store;
 
 import Store.Obersvables.ConcreteLogger;
 import Store.Staff.*;
-import Store.Obersvables.Logger;
+import Store.Obersvables.*;
 import java.util.ArrayList;
 import java.util.Random;
 import Item.Inventory;
@@ -94,9 +94,14 @@ public class Store {
         }
     }
     public void run(int days) {
+        Tracker tracker = new ConcreteTracker(this);
+        for (Staff s : this.staffMembers) {
+            s.setTracker(tracker);
+        }
+
+
         for (int j=0; j<days; j++) {
             Logger dayLogger = new ConcreteLogger(this);
-
             Random r = new Random();
             int working = r.nextInt(1); // maybe more than one eventually
             System.out.println("Day:"+this.dayCount);
@@ -120,5 +125,6 @@ public class Store {
 
             dayCount+=1;
         }
+        tracker.display();
     }
 }

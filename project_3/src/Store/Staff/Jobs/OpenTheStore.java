@@ -1,6 +1,6 @@
 package Store.Staff.Jobs;
 
-import Store.Obersvables.Logger;
+import Store.Obersvables.*;
 import Store.Staff.Staff;
 import Store.Store;
 import Item.*;
@@ -10,8 +10,11 @@ import java.util.Random;
 
 public class OpenTheStore implements Job  {
     private Logger obs = null;
-    public OpenTheStore(Logger o) {
+    private Tracker tr = null;
+
+    public OpenTheStore(Logger o, Tracker t) {
         registerObserver(o);
+        registerObserverTracker(t);
     }
 
     public void do_job(Store s, Staff p) {
@@ -52,6 +55,7 @@ public class OpenTheStore implements Job  {
         }
         notifyObservers(countItemsSold+" items sold.");
 
+        System.out.println("Sellers:"+sellers);
         for (int i=0; i<sellers; i++) {
             String randSubtype = inv.getStringSubtype();
             Item item = inv.createItem(randSubtype);
@@ -80,6 +84,7 @@ public class OpenTheStore implements Job  {
             }
         }
         notifyObservers(countItemsBought+" items bought.");
+        notifyObserversTracker(p, countItemsSold, countItemsBought, 0);
     }
     public void registerObserver(Logger o) {
         obs = o;
@@ -93,4 +98,13 @@ public class OpenTheStore implements Job  {
     public void setLogger(Logger o) {
         obs = o;
     }
+
+    public void registerObserverTracker(Tracker t) {
+        this.tr = t;
+    }
+    public void removeObserverTracker(Tracker t) {tr = null;} // shouldnt have parameter
+    public void notifyObserversTracker(Staff p, int sold, int purch, int dmg) {
+        tr.update_tracker(p,sold,purch,dmg);
+    }
+    public void setTracker(Tracker t) {tr = t;}
 }
