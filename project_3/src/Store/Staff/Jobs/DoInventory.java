@@ -18,6 +18,7 @@ public class DoInventory implements Job {
         boolean found = false;
         boolean ordered = false;
         String className = "";
+        int countOrders = 0;
         ArrayList<ItemDecorator> merch = inventory.getMerchandise();
         //for loop that tunes all items in the merchandise
         for (int i = 0; i < merch.size(); i++){
@@ -41,10 +42,14 @@ public class DoInventory implements Job {
                 }
                 //creates and runs PlaceAnOrder Job
                 if(!ordered) {
-                    new PlaceAnOrder(obs).do_job(s, p, subtype);
+                    new PlaceAnOrder(obs).do_job(s, p, subtype); // +3 of that type
+                    countOrders += 3;
                 }
             }
         }
+        notifyObservers(inventory.getMerchandise().size()+" items in inventory.");
+        notifyObservers("$"+inventory.sumPurchasePrice()+" sum purchase price in inventory.");
+        notifyObservers(countOrders+" orders placed.");
     }
     public void registerObserver(Logger o) {
         obs = o;
@@ -52,7 +57,7 @@ public class DoInventory implements Job {
     public void removeObserver(Logger o) {
         obs = null;
     }
-    public void notifyObservers(String info, Store s) {
+    public void notifyObservers(String info) {
         obs.update(info);
     }
     public void setLogger(Logger o) {
