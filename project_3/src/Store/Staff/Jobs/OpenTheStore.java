@@ -55,7 +55,6 @@ public class OpenTheStore implements Job  {
         }
         notifyObservers(countItemsSold+" items sold.");
 
-        System.out.println("Sellers:"+sellers);
         for (int i=0; i<sellers; i++) {
             String randSubtype = inv.getStringSubtype();
             ItemDecorator itemDecorator = inv.createItem(randSubtype);
