@@ -90,7 +90,7 @@ public class Store implements StoreInterface {
     }
     public Inventory getInventory() {return inventory;}
     public void setStaffsLogger(Logger o) {
-        for (Staff s: workingStaff) {
+        for (Staff s: staffMembers) {
             s.setLogger(o);
         }
     }
@@ -104,16 +104,10 @@ public class Store implements StoreInterface {
         for (int j=0; j<days; j++) {
             Logger dayLogger = new ConcreteLogger(this);
             Random r = new Random();
-            int working = r.nextInt(1); // maybe more than one eventually
+            int working = r.nextInt(staffMembers.size()); // maybe more than one eventually
             System.out.println("Day:"+this.dayCount);
             if (this.staffMembers.get(working).getDaysWorkedConsecutivley() >= 2) {
                 this.staffMembers.get(working).setDaysWorkedConsecutivley(0);
-                if (working==1) {
-                    this.workingStaff.add(this.staffMembers.get(0));
-                }
-                else {
-                    this.workingStaff.add(this.staffMembers.get(1));
-                }
             }
             else {
                 this.workingStaff.add(this.staffMembers.get(working));
