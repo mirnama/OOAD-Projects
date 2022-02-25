@@ -1,213 +1,183 @@
-Velma arrived.
-228 items added.
-$1075.78 in register.
-$1075.78 in register.
-$490.87 in register.
-$53.33 in register.
-$1053.33 in register.
-$815.04 in register.
-$367.39 in register.
-$59.29 in register.
-$1059.29 in register.
-$536.23 in register.
-$-42.33 in register.
-$957.67 in register.
-$505.03 in register.
-$475.60 in register.
-$-80.73 in register.
-$919.27 in register.
-$820.64 in register.
-$490.63 in register.
-$401.40 in register.
-$4.37 in register.
-$1004.37 in register.
-$603.93 in register.
-1039 items in inventory.
-$104761 sum purchase price in inventory.
+Shaggy arrived.
+195 items added.
+$740.25 in register.
+$740.25 in register.
+$377.12 in register.
+$218.31 in register.
+$-302.66 in register.
+$697.34 in register.
+$656.98 in register.
+$270.04 in register.
+$135.87 in register.
+$-276.06 in register.
+$723.94 in register.
+$701.67 in register.
+$411.92 in register.
+$-166.55 in register.
+$833.45 in register.
+$461.90 in register.
+$58.77 in register.
+$1058.77 in register.
+$801.53 in register.
+$254.64 in register.
+$-125.65 in register.
+$874.35 in register.
+863 items in inventory.
+$82984 sum purchase price in inventory.
 48 orders placed.
-4 items sold.
-1 items bought.
+6 items sold.
+3 items bought.
 1 items damaged.
-Velma left.
-Daphne arrived.
-0 items added.
-$612.67 in register.
-$612.67 in register.
-$290.08 in register.
-$235.22 in register.
-$-102.36 in register.
-$897.64 in register.
-$619.65 in register.
-$567.77 in register.
-$105.64 in register.
-$-49.86 in register.
-$950.14 in register.
-$353.28 in register.
-$64.12 in register.
-$1064.12 in register.
-$1003.61 in register.
-$670.36 in register.
-$614.63 in register.
-$440.42 in register.
-$133.39 in register.
-$-224.87 in register.
-$775.13 in register.
-1036 items in inventory.
-$104435 sum purchase price in inventory.
-48 orders placed.
-3 items sold.
-1 items bought.
-1 items damaged.
-Daphne left.
+Shaggy left.
 Shaggy arrived.
 0 items added.
-$1034.81 in register.
-$1034.81 in register.
-$916.85 in register.
-$529.92 in register.
-$318.03 in register.
-$-18.94 in register.
-$981.06 in register.
-$508.33 in register.
-$13.45 in register.
-$1013.45 in register.
-$698.21 in register.
-$489.97 in register.
-$131.21 in register.
-$-139.19 in register.
-$860.81 in register.
-$555.23 in register.
-$290.15 in register.
-$-24.69 in register.
-$975.31 in register.
-$402.89 in register.
-$276.15 in register.
-1034 items in inventory.
-$104147 sum purchase price in inventory.
+$1487.89 in register.
+$1487.89 in register.
+$1189.56 in register.
+$590.11 in register.
+$339.20 in register.
+$278.40 in register.
+$-90.95 in register.
+$909.05 in register.
+$603.72 in register.
+$263.49 in register.
+$-50.81 in register.
+$949.19 in register.
+$351.69 in register.
+$-55.02 in register.
+$944.98 in register.
+$673.50 in register.
+$543.63 in register.
+$190.18 in register.
+$-232.49 in register.
+$767.51 in register.
+$488.87 in register.
+860 items in inventory.
+$82697 sum purchase price in inventory.
 48 orders placed.
-4 items sold.
-0 items bought.
+5 items sold.
+1 items bought.
 1 items damaged.
 Shaggy left.
 Velma arrived.
 0 items added.
-$900.92 in register.
-$900.92 in register.
-$308.93 in register.
-$150.27 in register.
-$-261.50 in register.
-$738.50 in register.
-$697.38 in register.
-$436.09 in register.
-$-84.41 in register.
-$915.59 in register.
-$429.24 in register.
-$-27.28 in register.
-$972.72 in register.
-$774.65 in register.
-$297.63 in register.
-$82.49 in register.
-$-277.25 in register.
-$722.75 in register.
-$488.24 in register.
-$-65.17 in register.
-$934.83 in register.
-$805.12 in register.
-1030 items in inventory.
-$103429 sum purchase price in inventory.
+$692.22 in register.
+$692.22 in register.
+$405.40 in register.
+$224.06 in register.
+$-75.54 in register.
+$924.46 in register.
+$416.84 in register.
+$307.96 in register.
+$301.01 in register.
+$71.52 in register.
+$1071.52 in register.
+$525.80 in register.
+$56.42 in register.
+$1056.42 in register.
+$909.82 in register.
+$624.86 in register.
+$95.00 in register.
+$-263.49 in register.
+$736.51 in register.
+$237.00 in register.
+$-303.54 in register.
+$696.46 in register.
+856 items in inventory.
+$82319 sum purchase price in inventory.
 48 orders placed.
 4 items sold.
+2 items bought.
+1 items damaged.
+Velma left.
+Shaggy arrived.
+0 items added.
+$578.68 in register.
+$578.68 in register.
+$-6.56 in register.
+$993.44 in register.
+$637.31 in register.
+$377.76 in register.
+$-81.54 in register.
+$918.46 in register.
+$690.14 in register.
+$621.76 in register.
+$292.72 in register.
+$25.11 in register.
+$1025.11 in register.
+$494.76 in register.
+$210.58 in register.
+$-167.15 in register.
+$832.85 in register.
+$297.49 in register.
+$3.17 in register.
+$1003.17 in register.
+$424.59 in register.
+$-164.01 in register.
+$835.99 in register.
+854 items in inventory.
+$82200 sum purchase price in inventory.
+48 orders placed.
+7 items sold.
+1 items bought.
+1 items damaged.
+Shaggy left.
+Velma arrived.
+0 items added.
+$1427.02 in register.
+$1427.02 in register.
+$894.88 in register.
+$597.06 in register.
+$440.50 in register.
+$376.87 in register.
+$285.35 in register.
+$-123.35 in register.
+$876.65 in register.
+$469.33 in register.
+$-89.92 in register.
+$910.08 in register.
+$630.44 in register.
+$533.44 in register.
+$501.32 in register.
+$304.85 in register.
+$-63.07 in register.
+$936.93 in register.
+$761.15 in register.
+$628.68 in register.
+848 items in inventory.
+$81488 sum purchase price in inventory.
+48 orders placed.
+7 items sold.
 1 items bought.
 1 items damaged.
 Velma left.
-Daphne arrived.
+Velma arrived.
 0 items added.
-$855.47 in register.
-$855.47 in register.
-$707.00 in register.
-$624.44 in register.
-$448.23 in register.
-$367.30 in register.
-$38.62 in register.
-$1038.62 in register.
-$805.86 in register.
-$205.54 in register.
-$67.77 in register.
-$1067.77 in register.
-$907.93 in register.
-$413.41 in register.
-$157.42 in register.
-$62.23 in register.
-$1062.23 in register.
-$690.13 in register.
-$508.71 in register.
-$276.24 in register.
-1027 items in inventory.
-$103156 sum purchase price in inventory.
+$913.09 in register.
+$913.09 in register.
+$691.15 in register.
+$378.17 in register.
+$21.14 in register.
+$1021.14 in register.
+$609.67 in register.
+$189.23 in register.
+$153.08 in register.
+$-76.88 in register.
+$923.12 in register.
+$334.88 in register.
+$263.71 in register.
+$51.42 in register.
+$1051.42 in register.
+$719.89 in register.
+$289.93 in register.
+$164.73 in register.
+$66.89 in register.
+$1066.89 in register.
+$701.77 in register.
+842 items in inventory.
+$81296 sum purchase price in inventory.
 48 orders placed.
 4 items sold.
-2 items bought.
-1 items damaged.
-Daphne left.
-Velma arrived.
-0 items added.
-$624.42 in register.
-$624.42 in register.
-$591.29 in register.
-$344.94 in register.
-$-86.66 in register.
-$913.34 in register.
-$545.34 in register.
-$-54.93 in register.
-$945.07 in register.
-$395.39 in register.
-$-181.09 in register.
-$818.91 in register.
-$428.48 in register.
-$239.24 in register.
-$231.35 in register.
-$92.60 in register.
-$-145.33 in register.
-$854.67 in register.
-$387.65 in register.
-$11.74 in register.
-$1011.74 in register.
-$952.71 in register.
-1025 items in inventory.
-$102821 sum purchase price in inventory.
-48 orders placed.
-5 items sold.
-2 items bought.
-1 items damaged.
-Velma left.
-Velma arrived.
-0 items added.
-$639.29 in register.
-$639.29 in register.
-$598.81 in register.
-$254.92 in register.
-$-116.43 in register.
-$883.57 in register.
-$303.49 in register.
-$-76.96 in register.
-$923.04 in register.
-$655.17 in register.
-$172.22 in register.
-$-151.16 in register.
-$848.84 in register.
-$542.06 in register.
-$293.81 in register.
-$-134.76 in register.
-$865.24 in register.
-$447.89 in register.
-$-83.45 in register.
-$916.55 in register.
-$740.90 in register.
-$262.03 in register.
-1022 items in inventory.
-$102784 sum purchase price in inventory.
-48 orders placed.
-5 items sold.
-2 items bought.
+3 items bought.
 1 items damaged.
 Velma left.

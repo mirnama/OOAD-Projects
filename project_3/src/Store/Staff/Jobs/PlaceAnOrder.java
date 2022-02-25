@@ -121,9 +121,7 @@ public class PlaceAnOrder implements Job{
                 s.setCashReg(s.getCashReg() - 3 * purchasePrice);
                 break;
         }
-        //print confirming order
-        System.out.println(p.getEmployeeName() + " bought 3 " + subtype.substring(14) + " for: " +  purchasePrice + " and the order will be here in " + arrivalDate + " days.");
-        // notifyObservers(); // handled in DoInventory
+        System.out.println(p.getEmployeeName() + " bought 3 " + subtype.substring(14) + " for: " +  String.format("%.2f", purchasePrice) + " and the order will be here in " + arrivalDate + " days.");
     }
 
     public void registerObserver(Logger o) {

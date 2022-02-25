@@ -1,29 +1,31 @@
-Daphne arrived.
+Shaggy arrived.
 0 items added.
 $0.00 in register.
 $1000.00 in register.
 $1000.00 in register.
-$908.52 in register.
-$898.54 in register.
-$873.44 in register.
-$544.06 in register.
-$423.19 in register.
-$401.88 in register.
-$358.20 in register.
-$272.97 in register.
-$143.07 in register.
-$-110.16 in register.
-$889.84 in register.
-$497.35 in register.
-$395.84 in register.
-$86.79 in register.
-$26.24 in register.
-$1026.24 in register.
-$632.48 in register.
+$830.50 in register.
+$604.31 in register.
+$585.26 in register.
+$206.44 in register.
+$105.10 in register.
+$-395.92 in register.
+$604.08 in register.
+$373.93 in register.
+$-152.74 in register.
+$847.26 in register.
+$251.55 in register.
+$-46.63 in register.
+$953.37 in register.
+$707.24 in register.
+$284.09 in register.
+$224.37 in register.
+$21.88 in register.
+$1021.88 in register.
+$730.58 in register.
 15 items in inventory.
 $1229 sum purchase price in inventory.
 48 orders placed.
-4 items sold.
+6 items sold.
 1 items bought.
 1 items damaged.
-Daphne left.
+Shaggy left.
