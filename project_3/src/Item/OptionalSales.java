@@ -8,4 +8,5 @@ public interface OptionalSales {
     public ArrayList <String> getClassNames();
     public ArrayList < ItemDecorator > getSoldItems();
 
+
 }

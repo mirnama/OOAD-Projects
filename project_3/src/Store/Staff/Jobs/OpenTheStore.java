@@ -70,6 +70,9 @@ public class OpenTheStore implements Job  {
                         double discountPrice = itemDecorator.getListPrice() * 0.9f;
                         System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
+
+
+
                         inv.addSold(itemDecorator);
                         inv.removeMerch(itemDecorator);
                         countItemsSold += 1;
@@ -78,6 +81,8 @@ public class OpenTheStore implements Job  {
             } else {
                 System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(14) + " but none were in inventory, so they left");
             }
+            double chanceOfSelling = rand.nextDouble();
+
         }
         notifyObservers(countItemsSold+" items sold.");
 
