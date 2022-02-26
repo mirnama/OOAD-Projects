@@ -90,7 +90,7 @@ public class Store implements StoreInterface {
     }
     public Inventory getInventory() {return inventory;}
     public void setStaffsLogger(Logger o) {
-        for (Staff s: workingStaff) {
+        for (Staff s: staffMembers) {
             s.setLogger(o);
         }
     }
@@ -103,21 +103,39 @@ public class Store implements StoreInterface {
 
         for (int j=0; j<days; j++) {
             Logger dayLogger = new ConcreteLogger(this);
-            Random r = new Random();
-            int working = r.nextInt(1); // maybe more than one eventually
             System.out.println("Day:"+this.dayCount);
-            if (this.staffMembers.get(working).getDaysWorkedConsecutivley() >= 2) {
-                this.staffMembers.get(working).setDaysWorkedConsecutivley(0);
-                if (working==1) {
-                    this.workingStaff.add(this.staffMembers.get(0));
+
+
+            ArrayList<Staff> findStaff = staffMembers;
+            Random r = new Random();
+            boolean workFlag = false;
+            while (workFlag == false) {
+                if (findStaff.size()==0) {
+                    System.out.println("Everyone is either sick or overworked. Store is closed.");
+                    workFlag = true;
                 }
                 else {
-                    this.workingStaff.add(this.staffMembers.get(1));
+                    int working = r.nextInt(findStaff.size()); // maybe more than one eventually
+                    if (findStaff.get(working).getDaysWorkedConsecutivley() >= 2) {
+                        Staff overWorked = findStaff.get(working);
+                        overWorked.setDaysWorkedConsecutivley(0);
+                        findStaff.remove(overWorked);
+                    } else {
+                        double sickChance = r.nextDouble();
+                        if (sickChance < 0.1) {
+                            Staff sickStaff = findStaff.get(working);
+                            System.out.println(sickStaff.getEmployeeName() + " is sick");
+                            sickStaff.setDaysWorkedConsecutivley(0);
+                            findStaff.remove(sickStaff);
+                        } else {
+                            workingStaff.add(findStaff.get(working));
+                            workFlag = true;
+                        }
+
+                    }
                 }
             }
-            else {
-                this.workingStaff.add(this.staffMembers.get(working));
-            }
+
 
             setStaffsLogger(dayLogger);
             for (int z=0; z<this.workingStaff.size(); z++) {

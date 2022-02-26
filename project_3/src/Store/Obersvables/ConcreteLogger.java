@@ -11,7 +11,7 @@ public class ConcreteLogger implements Logger {
     File current;
 
     public ConcreteLogger(Store s) {
-        path = "./Logs/logger"+s.getDayCount()+".txt";
+        path = "./Logs/logs_"+s.getDayCount()+".txt";
         File tempFile = new File(path);
         boolean exists = tempFile.exists();
         if (exists == false) {

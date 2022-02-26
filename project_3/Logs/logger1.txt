@@ -1,0 +1,63 @@
+Daphne arrived.
+18 items added.
+$170.39 in register.
+$170.39 in register.
+$8.95 in register.
+$1008.95 in register.
+$693.75 in register.
+$300.72 in register.
+$-108.65 in register.
+$891.35 in register.
+$335.95 in register.
+$-256.00 in register.
+$744.00 in register.
+$298.69 in register.
+$46.64 in register.
+$1046.64 in register.
+$610.09 in register.
+$34.39 in register.
+$1034.39 in register.
+$523.20 in register.
+$167.36 in register.
+$116.98 in register.
+$64.62 in register.
+$1064.62 in register.
+$499.25 in register.
+30 items in inventory.
+$2621 sum purchase price in inventory.
+48 orders placed.
+4 items sold.
+1 items bought.
+1 items damaged.
+Daphne left.
+Daphne arrived.
+0 items added.
+$95.01 in register.
+$95.01 in register.
+$-442.34 in register.
+$557.66 in register.
+$336.66 in register.
+$60.15 in register.
+$1060.15 in register.
+$675.38 in register.
+$454.18 in register.
+$442.34 in register.
+$401.10 in register.
+$62.86 in register.
+$1062.86 in register.
+$604.35 in register.
+$344.72 in register.
+$270.41 in register.
+$-184.90 in register.
+$815.10 in register.
+$579.73 in register.
+$44.52 in register.
+$1044.52 in register.
+$444.18 in register.
+27 items in inventory.
+$2743 sum purchase price in inventory.
+48 orders placed.
+4 items sold.
+2 items bought.
+1 items damaged.
+Daphne left.

@@ -1,0 +1,36 @@
+Velma arrived.
+0 items added.
+$0.00 in register.
+$1000.00 in register.
+$1000.00 in register.
+$466.96 in register.
+$432.44 in register.
+$315.91 in register.
+$-176.30 in register.
+$823.70 in register.
+$379.31 in register.
+$306.03 in register.
+$-2.22 in register.
+$997.78 in register.
+$449.76 in register.
+$363.20 in register.
+$-211.60 in register.
+$788.40 in register.
+$200.60 in register.
+$-309.79 in register.
+$690.21 in register.
+$447.58 in register.
+$395.83 in register.
+$-176.08 in register.
+$823.92 in register.
+$358.35 in register.
+$358.35 in register.
+$358.35 in register.
+$358.35 in register.
+27 items in inventory.
+$2999 sum purchase price in inventory.
+60 orders placed.
+3 items sold.
+3 items bought.
+1 items damaged.
+Velma left.

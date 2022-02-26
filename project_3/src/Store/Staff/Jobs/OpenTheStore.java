@@ -49,6 +49,7 @@ public class OpenTheStore implements Job  {
         Random rand = new Random();
         int countItemsSold = 0;
         int countItemsBought = 0;
+
         int buyers = getRandomBuyersPoisson(4, 8) + 2;
         int sellers = rand.nextInt(4 - 1) + 1;
         System.out.println("number of buyers in store " + buyers);
@@ -58,7 +59,7 @@ public class OpenTheStore implements Job  {
             if (itemDecorator != null) {
                 double listChance = rand.nextDouble();
                 if (listChance < 0.5) {
-                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + itemDecorator.getListPrice() + "$ to Customer " + i);
+                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", itemDecorator.getListPrice()) + "$ to Customer " + i);
                     s.setCashReg(s.getCashReg() + itemDecorator.getListPrice());
                     inv.addSold(itemDecorator);
                     inv.removeMerch(itemDecorator);
@@ -67,7 +68,7 @@ public class OpenTheStore implements Job  {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
                         double discountPrice = itemDecorator.getListPrice() * 0.9f;
-                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + discountPrice + "$ after a 10% discount to Customer " + i);
+                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
                         inv.addSold(itemDecorator);
                         inv.removeMerch(itemDecorator);
