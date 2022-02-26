@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="new inventories">
-      <change afterPath="$PROJECT_DIR$/src/Item/OptionalSales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Created Optional sales Decorator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/OptionalSales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645851007548</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created Optional sales Decorator">
+      <created>1645853960520</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1645853960520</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +239,7 @@
     <MESSAGE value="Added Daphne" />
     <MESSAGE value="Logs Folder" />
     <MESSAGE value="new inventories" />
-    <option name="LAST_COMMIT_MESSAGE" value="new inventories" />
+    <MESSAGE value="Created Optional sales Decorator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Optional sales Decorator" />
   </component>
 </project>

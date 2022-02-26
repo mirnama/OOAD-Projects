@@ -1,5 +1,6 @@
 package Item;
 import Store.*;
+import Store.Staff.Staff;
 
 import java.util.ArrayList;
 
@@ -13,11 +14,28 @@ public class OptionalSalesDecorater implements OptionalSales {
         this.i=item;
     }
 
-    public ItemDecorator getI ( ) {
+    public ItemDecorator getI (Store s, Staff p ) {
+        Inventory inv = s.getInventory();
+        String itemDecorator =i.getClass().getName();
+
+        if (itemDecorator.getClass().getName().equals("Stringed")) {
+            if (chanceOfSelling < 0.20) {
+                System.out.println(p.getEmployeeName() + " sold a " + "Big Gag" + "to Customer " + i);
+
+            } else if (chanceOfSelling < 0.25 && chanceOfSelling > 0.20) {
+                System.out.println(p.getEmployeeName() + " sold a " + "Practice Amp" + "to Customer with" + i);
+
+            } else if (chanceOfSelling < 0.3 && chanceOfSelling > 0.40)
+                System.out.println(p.getEmployeeName() + " sold a " + "Strings" + " to Customer with" + i);
+            else if (chanceOfSelling < 0.40) {
+                System.out.println(p.getEmployeeName() + " sold a " + "Practice Amp" + " to Customer with" + i);
+
+            }
+        }
         return i;
     }
 
-    public void setI (ItemDecorator i) {
+    public void setI (Store s, Staff p) {
 
         this.i = i;
     }
@@ -40,6 +58,7 @@ public class OptionalSalesDecorater implements OptionalSales {
 
     @Override
     public ArrayList < ItemDecorator > getSoldItems ( ) {
+
         return null;
     }
 }
