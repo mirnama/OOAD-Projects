@@ -29,6 +29,18 @@ public class Inventory { // singleton
         this.merchandise.add(new Flute("standard","Montreux",5,500f,580f,566.66f));
         this.merchandise.add(new Flute("Piccolo","The smallest",1,450f,550f,543f));
         this.merchandise.add(new Flute("Plastic","The plastic flute ",5,45f,55f,54f));
+        this.merchandise.add(new Saxophone("SaxophoneType1","Saxophonn1",5,55,110,100));
+        this.merchandise.add(new Saxophone("SaxophoneType2","Saxophonn2",5,55,110,100));
+        this.merchandise.add(new Saxophone("SaxophoneType3","Saxophonn3",5,55,110,100));
+        this.merchandise.add(new GigBag("Red bag",5,50,58,56));
+        this.merchandise.add(new GigBag("The smallest",1,450f,550f,543f));
+        this.merchandise.add(new GigBag("blue",5,50,58,56));
+        this.merchandise.add(new Cassette("Red Rocks",5,5,6,5.6));
+        this.merchandise.add(new Cassette("The smallest",1,450f,550f,543f));
+        this.merchandise.add(new Cassette("blue Cassette",5,50,58,56));
+        this.merchandise.add(new CassettePlayer("Sony",5,50,60,56));
+        this.merchandise.add(new CassettePlayer("Carplay",1,450,550,543));
+        this.merchandise.add(new CassettePlayer("cassette",5,50,58,56));
 
         this.classNames.add("ItemDecorator.Bandanas");
         this.classNames.add("ItemDecorator.Cable");
@@ -46,6 +58,10 @@ public class Inventory { // singleton
         this.classNames.add("ItemDecorator.Vinyl");
         this.classNames.add("ItemDecorator.Bass");
         this.classNames.add("ItemDecorator.RecordPlayer");
+        this.classNames.add("ItemDecorator.Saxophone");
+        this.classNames.add("ItemDecorator.Cassette");
+        this.classNames.add("ItemDecorator.CassettePlayer");
+        this.classNames.add("ItemDecorator.GigBag");
     }
     public ArrayList < ItemDecorator > getSoldItems() {return soldItemDecorators;}
     public ArrayList < ItemDecorator > getMerchandise ( ) { // needs to be type ItemDecorator
@@ -97,7 +113,7 @@ public class Inventory { // singleton
         Random rand = new Random();
         int itemCond = rand.nextInt(5);
         ItemDecorator itemDecorator;
-        double purchasePrice = (double) (Math.random() * 200) + 1.00f;
+        double purchasePrice = (double) (Math.random() * 200) + 1.00;
         switch (subtype){ // would have to implement randomness here, we should be doing it in the constructor call of items
             case "ItemDecorator.Bandanas":
                 itemDecorator = new Bandanas("Random Bandana", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
@@ -148,7 +164,8 @@ public class Inventory { // singleton
                 itemDecorator = new RecordPlayer("Black Record Player", itemCond, purchasePrice, purchasePrice*1.2f, purchasePrice*1.2f);
                 break;
             default:
-                itemDecorator = null;
+                itemDecorator =new Saxophone("SaxophoneType3","Saxophonn3",5,55,110,100);
+
         }
         return itemDecorator;
     }

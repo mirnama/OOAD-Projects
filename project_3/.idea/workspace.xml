@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Added Daphne">
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Logs Folder">
+      <change afterPath="$PROJECT_DIR$/Logs/logs0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Store/OptionalSales.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logger0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logger0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logger1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logger1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logger2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logger2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logger4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logger4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Saxophone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Saxophone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Obersvables/ConcreteLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645817822254</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Logs Folder">
+      <created>1645818499861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645818499861</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +238,7 @@
     <MESSAGE value="Latest work" />
     <MESSAGE value="Added Decorators for StoreInterface and ItemInter" />
     <MESSAGE value="Added Daphne" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Daphne" />
+    <MESSAGE value="Logs Folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logs Folder" />
   </component>
 </project>
