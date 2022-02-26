@@ -1,0 +1,35 @@
+Daphne arrived.
+0 items added.
+$865.13 in register.
+$865.13 in register.
+$398.87 in register.
+$-130.97 in register.
+$869.03 in register.
+$449.33 in register.
+$3.59 in register.
+$1003.59 in register.
+$455.33 in register.
+$-93.31 in register.
+$906.69 in register.
+$697.19 in register.
+$529.83 in register.
+$466.02 in register.
+$67.10 in register.
+$1067.10 in register.
+$679.87 in register.
+$539.54 in register.
+$339.78 in register.
+$-30.71 in register.
+$969.29 in register.
+$897.43 in register.
+$853.31 in register.
+$853.31 in register.
+$853.31 in register.
+$853.31 in register.
+311 items in inventory.
+$28586 sum purchase price in inventory.
+60 orders placed.
+5 items sold.
+1 items bought.
+1 items damaged.
+Daphne left.

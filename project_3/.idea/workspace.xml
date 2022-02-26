@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Added Daphne">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="new inventories">
+      <change beforePath="$PROJECT_DIR$/src/Store/OptionalSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/OptionalSales.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645817822254</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Logs Folder">
+      <created>1645818499861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645818499861</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new inventories">
+      <created>1645850525548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645850525548</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +220,8 @@
     <MESSAGE value="Latest work" />
     <MESSAGE value="Added Decorators for StoreInterface and ItemInter" />
     <MESSAGE value="Added Daphne" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Daphne" />
+    <MESSAGE value="Logs Folder" />
+    <MESSAGE value="new inventories" />
+    <option name="LAST_COMMIT_MESSAGE" value="new inventories" />
   </component>
 </project>
