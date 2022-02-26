@@ -1,10 +1,12 @@
 package Item;
 
 import Store.Staff.Jobs.Order;
+import Store.Store;
 
 import java.util.Random;
 
 import java.util.ArrayList;
+import java.lang.Integer;
 
 public class Inventory { // singleton
     private ArrayList< ItemDecorator > merchandise = new ArrayList< ItemDecorator >();
@@ -103,8 +105,88 @@ public class Inventory { // singleton
     public void addMerch(ItemDecorator i) {
         this.merchandise.add(i);
     }
-    public void addOrder(Order o) {
-        this.orders.add(o);
+    public ArrayList<Float> addOrder(String subtype, Store s, int num) {
+        int arrivalDate = (int)Math.random() * 3 + 1;
+        float purchasePrice = (float)(Math.random() * 200) + 1.00f;
+        ArrayList<Float> ret = new ArrayList<Float>();
+        ret.add(0f); // total price
+
+
+
+        for (int i=0; i<num; i++) {
+
+            switch (subtype) {
+                case "ItemDecorator.Bandanas":
+                    orders.add(new Order(new Bandanas("green Bandana", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Cable":
+                    orders.add(new Order(new Cable(2, "green cable", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Flute":
+                    orders.add(new Order(new Flute("standard", "green flute", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Guitar":
+                    orders.add(new Order(new Guitar(true, "green electric guitar", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Harmonica":
+                    orders.add(new Order(new Harmonica("G", "Harmonica for kids", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Hat":
+                    orders.add(new Order(new Hat(1, "Blue Hat", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Mandolin":
+                    orders.add(new Order(new Mandolin(false, "Mandolin for kids", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.PracticeAmps":
+                    orders.add(new Order(new PracticeAmps(100, "Practice amps super", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Shirt":
+                    orders.add(new Order(new Shirt(3, "Metallica Shirt", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Strings":
+                    orders.add(new Order(new Strings("guitar String", "Guitar G String", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.CD":
+                    orders.add(new Order(new CD("Green day CD", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.MP3Players":
+                    orders.add(new Order(new MP3Players("Ipod nano", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.CdPlayers":
+                    orders.add(new Order(new CdPlayers("Silver CD player", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Vinyl":
+                    orders.add(new Order(new Vinyl("Vinyl Record", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.Bass":
+                    orders.add(new Order(new Bass(true, "Electric Bass", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                case "ItemDecorator.RecordPlayer":
+                    orders.add(new Order(new RecordPlayer("Black Record Player", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+            }
+            ret.set(0,ret.get(0)+purchasePrice);
+        }
+        float f_arrival_date = (float)arrivalDate;
+        ret.add(f_arrival_date); // arrival date
+        return ret;
+
     }
     public void addSold(ItemDecorator i) {
         this.soldItemDecorators.add(i);
