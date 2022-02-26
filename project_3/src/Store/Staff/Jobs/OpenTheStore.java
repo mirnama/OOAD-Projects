@@ -24,7 +24,7 @@ public class OpenTheStore implements Job  {
         Random rand = new Random();
         int countItemsSold = 0;
         int countItemsBought = 0;
-        int buyers = rand.nextInt(10 - 4) + 4;
+        int buyers = rand.nextInt(10 - 2) + 2;
         int sellers = rand.nextInt(4 - 1) + 1;
 
         for (int i=0; i<buyers; i++) {

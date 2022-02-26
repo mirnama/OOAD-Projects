@@ -4,9 +4,12 @@ package Item;
 
 public class Saxophone extends Wind{
     private String saxophoneType;
-    public Saxophone (String itemName, int itemCondition, double purchasePrice, double listPrice, double salePrice) {
+
+    public Saxophone (String  SaxophoneType,String itemName, int itemCondition, double purchasePrice, double listPrice, double salePrice) {
         super(itemName, itemCondition, purchasePrice, listPrice, salePrice);
+        this.saxophoneType = SaxophoneType;
     }
+
 
     public String getSaxophoneType ( ) {
         return saxophoneType;
