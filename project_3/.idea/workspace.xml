@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="new inventories">
-      <change beforePath="$PROJECT_DIR$/src/Store/OptionalSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/OptionalSales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logs/logs_5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logs_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logs_0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logs_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logs_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logs_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logs_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Bandanas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Bandanas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Bass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Bass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Cable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Cable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Flute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Flute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Guitar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Guitar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Harmonica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Harmonica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Hat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Hat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Instrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Instrument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/DoInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/Job.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +110,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -75,6 +132,17 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="project_3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,6 +172,7 @@
       <workItem from="1645676570468" duration="7152000" />
       <workItem from="1645812659575" duration="295000" />
       <workItem from="1645813332932" duration="2029000" />
+      <workItem from="1646171633602" duration="241000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the new add classes">
       <created>1645484689206</created>
@@ -223,5 +292,27 @@
     <MESSAGE value="Logs Folder" />
     <MESSAGE value="new inventories" />
     <option name="LAST_COMMIT_MESSAGE" value="new inventories" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="165" y="11" key="#Project_Structure" timestamp="1646171723298">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="165" y="11" key="#Project_Structure/0.0.1368.872@0.0.1368.872" timestamp="1646171723298" />
+    <state width="1326" height="281" key="GridCell.Tab.0.bottom" timestamp="1646171851427">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1646171851427" />
+    <state width="1326" height="281" key="GridCell.Tab.0.center" timestamp="1646171851427">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1646171851427" />
+    <state width="1326" height="281" key="GridCell.Tab.0.left" timestamp="1646171851427">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1646171851427" />
+    <state width="1326" height="281" key="GridCell.Tab.0.right" timestamp="1646171851427">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1646171851427" />
   </component>
 </project>

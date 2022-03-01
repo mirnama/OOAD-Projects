@@ -114,7 +114,6 @@ public class Inventory { // singleton
 
 
         for (int i=0; i<num; i++) {
-
             switch (subtype) {
                 case "ItemDecorator.Bandanas":
                     orders.add(new Order(new Bandanas("green Bandana", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));

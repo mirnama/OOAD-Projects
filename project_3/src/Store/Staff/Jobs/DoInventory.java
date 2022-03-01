@@ -51,6 +51,7 @@ public class DoInventory implements Job {
         notifyObservers("$"+inventory.sumPurchasePrice()+" sum purchase price in inventory.");
         notifyObservers(countOrders+" orders placed.");
     }
+
     public void registerObserver(Logger o) {
         obs = o;
     }
