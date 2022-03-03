@@ -29,7 +29,16 @@ public class DoInventory implements Job {
             else if (inventory.isPlayer(merch.get(i)) )
                 ((Clerk)p).getTune().do_tune((Player)(merch.get(i)));
         }
-        for(String subtype : inventory.getClassNames()) {
+        //removes shirt and hat if we no longer have either
+        if(!s.getInventory().subtypeExists("Item.Hat")){
+            s.getInventory().removeItemSubtype("Item.Hat");
+        }
+        if(!s.getInventory().subtypeExists("Item.Shirt")){
+            s.getInventory().removeItemSubtype("Item.Shirt");
+        }
+
+        //}
+        for(String subtype : inventory.getSellingClassNames()) {
             found = inventory.subtypeExists(subtype);
             ordered = false;
             //if class name is not found we place an order for an item of that class

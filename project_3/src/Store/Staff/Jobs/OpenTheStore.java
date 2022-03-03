@@ -16,7 +16,37 @@ public class OpenTheStore implements Job  {
         registerObserver(o);
         registerObserverTracker(t);
     }
+    private int getRandomBuyersPoisson(int mean, int size){
+        //creates probabilities for each bin
+        double[] distribution = new double[size];
+        for (int i = 0; i < distribution.length; i++) {
+            distribution[i] = (Math.pow(mean, i+1) * Math.exp(-mean)) / fact(i+1);
+        }
+        //establishes bins for probability distribution
+        double bound = 0;
+        double[] distributionBounds = new double[8];
+        for (int i = 0; i < distribution.length; i++){
+            distributionBounds[i] = bound + distribution[i];
+            bound += distribution[i];
+        }
+        //rolls number between 0 and .96
+        double random = Math.random() * .9603209266232816;
+        //puts random roll into bin and returns bin index
+        for (int i = 0; i < distributionBounds.length; i++){
+            if(i == distributionBounds.length - 1) return size;
+            else{
+                if(random < distributionBounds[i+1] && random > distributionBounds[i+1]) return i + 1;
+                else if (random < distributionBounds[i]) return i;
+            }
+        }
+        return 0;
+    }
+    //returns i!
+    private int fact(int i){
+        if (i == 1) return 1;
+        else return fact(i-1) * i;
 
+    }
     public void do_job(Store s, Staff p) {
         System.out.println("Opening the store");
         Inventory inv = s.getInventory();
@@ -24,9 +54,12 @@ public class OpenTheStore implements Job  {
         Random rand = new Random();
         int countItemsSold = 0;
         int countItemsBought = 0;
-        int buyers = rand.nextInt(10 - 2) + 2;
+        //generates random number of buyers according to poisson distribution
+        int buyers = getRandomBuyersPoisson(4, 8) + 2;
         int sellers = rand.nextInt(4 - 1) + 1;
+        //removes hat and shirt from class list if out of stock so customers no longer look for it.
 
+        System.out.println("number of buyers in store " + buyers);
         for (int i=0; i<buyers; i++) {
             String randSubtype = inv.getStringSubtype();
             Item item = inv.getItemSubtype(randSubtype);
@@ -50,11 +83,12 @@ public class OpenTheStore implements Job  {
                     }
                 }
             } else {
-                System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(14) + " but none were in inventory, so they left");
+                System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(5) + " but none were in inventory, so they left");
             }
+            double chanceOfSelling = rand.nextDouble();
+
         }
         notifyObservers(countItemsSold+" items sold.");
-
         for (int i=0; i<sellers; i++) {
             String randSubtype = inv.getStringSubtype();
             Item item = inv.createItem(randSubtype);
