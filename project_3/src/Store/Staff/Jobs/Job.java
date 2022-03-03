@@ -6,6 +6,7 @@ import Store.Store;
 
 public interface Job {
     public abstract void do_job(Store s, Staff p);
+
     public void registerObserver(Logger o); // logger
     public void removeObserver(Logger o); // logger
     public void notifyObservers(String info); // logger

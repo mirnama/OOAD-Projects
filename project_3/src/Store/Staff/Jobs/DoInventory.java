@@ -19,7 +19,7 @@ public class DoInventory implements Job {
         boolean ordered = false;
         String className = "";
         int countOrders = 0;
-        ArrayList<ItemDecorator> merch = inventory.getMerchandise();
+        ArrayList<Item> merch = inventory.getMerchandise();
         //for loop that tunes all items in the merchandise
         for (int i = 0; i < merch.size(); i++){
             if (inventory.isStringed(merch.get(i)))
@@ -60,6 +60,7 @@ public class DoInventory implements Job {
         notifyObservers("$"+inventory.sumPurchasePrice()+" sum purchase price in inventory.");
         notifyObservers(countOrders+" orders placed.");
     }
+
     public void registerObserver(Logger o) {
         obs = o;
     }

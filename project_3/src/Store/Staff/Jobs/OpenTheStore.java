@@ -62,26 +62,23 @@ public class OpenTheStore implements Job  {
         System.out.println("number of buyers in store " + buyers);
         for (int i=0; i<buyers; i++) {
             String randSubtype = inv.getStringSubtype();
-            ItemDecorator itemDecorator = inv.getItemSubtype(randSubtype);
-            if (itemDecorator != null) {
+            Item item = inv.getItemSubtype(randSubtype);
+            if (item != null) {
                 double listChance = rand.nextDouble();
                 if (listChance < 0.5) {
-                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + String.format("%.2f", itemDecorator.getListPrice()) + "$ to Customer " + i);
-                    s.setCashReg(s.getCashReg() + itemDecorator.getListPrice());
-                    inv.addSold(itemDecorator);
-                    inv.removeMerch(itemDecorator);
+                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", item.getListPrice()) + "$ to Customer " + i);
+                    s.setCashReg(s.getCashReg() + item.getListPrice());
+                    inv.addSold(item);
+                    inv.removeMerch(item);
                     countItemsSold += 1;
                 } else {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
-                        double discountPrice = itemDecorator.getListPrice() * 0.9f;
-                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
+                        double discountPrice = item.getListPrice() * 0.9f;
+                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
-
-
-
-                        inv.addSold(itemDecorator);
-                        inv.removeMerch(itemDecorator);
+                        inv.addSold(item);
+                        inv.removeMerch(item);
                         countItemsSold += 1;
                     }
                 }
@@ -93,25 +90,25 @@ public class OpenTheStore implements Job  {
         }
         notifyObservers(countItemsSold+" items sold.");
         for (int i=0; i<sellers; i++) {
-            String randSubtype = inv.getStringSellingSubtype();
-            ItemDecorator itemDecorator = inv.createItem(randSubtype);
+            String randSubtype = inv.getStringSubtype();
+            Item item = inv.createItem(randSubtype);
 
-            int min = 1+ itemDecorator.getItemCondition();
-            int max = 6+ itemDecorator.getItemCondition();
+            int min = 1+ item.getItemCondition();
+            int max = 6+ item.getItemCondition();
             int askPrice = rand.nextInt(max - min) + min;
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
-                System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$");
-                inv.addMerch(itemDecorator);
+                System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(14)+" for "+askPrice+"$");
+                inv.addMerch(item);
                 countItemsBought += 1;
             }
             else {
                 askPrice *= 1.1;
                 buyChance = rand.nextDouble();
                 if (buyChance < 0.75) {
-                    System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$ after a 10% increase.");
-                    inv.addMerch(itemDecorator);
+                    System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(14)+" for "+askPrice+"$ after a 10% increase.");
+                    inv.addMerch(item);
                     countItemsBought += 1;
                 }
                 else {

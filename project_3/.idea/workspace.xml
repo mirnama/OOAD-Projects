@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Created Optional sales Decorator">
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Thomas Decorator">
+      <change afterPath="$PROJECT_DIR$/src/Item/Decorator/SellGigBag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/logs_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logs_0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Decorator/SaleAccessory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="mirnaM" />
+        <entry key="$PROJECT_DIR$/.." value="Observer" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -57,27 +76,42 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Item" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Item.Decorator" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Item" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="project_3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,6 +141,7 @@
       <workItem from="1645676570468" duration="7152000" />
       <workItem from="1645812659575" duration="295000" />
       <workItem from="1645813332932" duration="2029000" />
+      <workItem from="1646171633602" duration="5294000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the new add classes">
       <created>1645484689206</created>
@@ -185,19 +220,19 @@
       <option name="project" value="LOCAL" />
       <updated>1645850525548</updated>
     </task>
-    <task id="LOCAL-00012" summary="new inventories">
-      <created>1645851007548</created>
+    <task id="LOCAL-00012" summary="Thomas Decorator">
+      <created>1646171967772</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1645851007548</updated>
+      <updated>1646171967773</updated>
     </task>
-    <task id="LOCAL-00013" summary="Created Optional sales Decorator">
-      <created>1645853960520</created>
+    <task id="LOCAL-00013" summary="Thomas Decorator">
+      <created>1646266950705</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1645853960520</updated>
+      <updated>1646266950705</updated>
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
@@ -239,7 +274,61 @@
     <MESSAGE value="Added Daphne" />
     <MESSAGE value="Logs Folder" />
     <MESSAGE value="new inventories" />
-    <MESSAGE value="Created Optional sales Decorator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Optional sales Decorator" />
+    <MESSAGE value="Thomas Decorator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thomas Decorator" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="165" y="11" key="#Project_Structure" timestamp="1646171723298">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="165" y="11" key="#Project_Structure/0.0.1368.872@0.0.1368.872" timestamp="1646171723298" />
+    <state x="468" y="331" width="431" height="215" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1646172958566">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="468" y="331" width="431" height="215" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1646172958566" />
+    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1646172352345">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1646172352345" />
+    <state x="415" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646172040422">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="415" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1368.872@0.0.1368.872" timestamp="1646172040422" />
+    <state width="1326" height="367" key="GridCell.Tab.0.bottom" timestamp="1646267485672">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
+    <state width="1326" height="367" key="GridCell.Tab.0.center" timestamp="1646267485672">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
+    <state width="1326" height="367" key="GridCell.Tab.0.left" timestamp="1646267485672">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
+    <state width="1326" height="367" key="GridCell.Tab.0.right" timestamp="1646267485672">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
+    <state width="1326" height="367" key="GridCell.Tab.1.bottom" timestamp="1646267485374">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
+    <state width="1326" height="367" key="GridCell.Tab.1.center" timestamp="1646267485374">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
+    <state width="1326" height="367" key="GridCell.Tab.1.left" timestamp="1646267485374">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
+    <state width="1326" height="367" key="GridCell.Tab.1.right" timestamp="1646267485374">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="367" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1646267200313">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1646267200313" />
   </component>
 </project>
