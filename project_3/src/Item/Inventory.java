@@ -1,6 +1,6 @@
 package Item;
 
-import Item.Decorator.SaleAccessory;
+import Item.Decorator.SellGigBag;
 import Store.Staff.Jobs.Order;
 import Store.Store;
 
@@ -19,7 +19,7 @@ public class Inventory { // singleton
         this.merchandise.add(new CD("CD1", 5,8.0f,10f,10f));
         this.merchandise.add(new CD("CD2", 4,6.0f,10f,9f));
         this.merchandise.add(new CD("CD3", 3,3f,7f,6.5f));
-        this.merchandise.add(new SaleAccessory(new Guitar(true, "Electric Guitar1", 5,10.0f, 10.0f, 10.0f)));
+        this.merchandise.add(new SellGigBag(new Guitar(true, "Electric Guitar1", 5,10.0f, 10.0f, 10.0f)));
         this.merchandise.add(new Guitar(false, "Acoustic Guitar1", 5,8.0f, 8.0f, 8.0f));
         this.merchandise.add(new Guitar(true, "Electric Guitar1", 5,10.0f, 10.0f, 10.0f));
         this.merchandise.add(new Vinyl("Vinyl1", 5,3f,7f,6.5f));
