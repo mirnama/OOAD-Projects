@@ -19,7 +19,7 @@ public class DoInventory implements Job {
         boolean ordered = false;
         String className = "";
         int countOrders = 0;
-        ArrayList<ItemDecorator> merch = inventory.getMerchandise();
+        ArrayList<Item> merch = inventory.getMerchandise();
         //for loop that tunes all items in the merchandise
         for (int i = 0; i < merch.size(); i++){
             if (inventory.isStringed(merch.get(i)))

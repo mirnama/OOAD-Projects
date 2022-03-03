@@ -1,6 +1,6 @@
 package Item;
 
-public class Music extends ItemDecorator {
+public class Music extends Item {
     private String band;
     private String album;
 
