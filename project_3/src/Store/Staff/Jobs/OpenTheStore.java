@@ -17,17 +17,21 @@ public class OpenTheStore implements Job  {
         registerObserverTracker(t);
     }
     private int getRandomBuyersPoisson(int mean, int size){
+        //creates probabilities for each bin
         double[] distribution = new double[size];
         for (int i = 0; i < distribution.length; i++) {
             distribution[i] = (Math.pow(mean, i+1) * Math.exp(-mean)) / fact(i+1);
         }
+        //establishes bins for probability distribution
         double bound = 0;
         double[] distributionBounds = new double[8];
         for (int i = 0; i < distribution.length; i++){
             distributionBounds[i] = bound + distribution[i];
             bound += distribution[i];
         }
+        //rolls number between 0 and .96
         double random = Math.random() * .9603209266232816;
+        //puts random roll into bin and returns bin index
         for (int i = 0; i < distributionBounds.length; i++){
             if(i == distributionBounds.length - 1) return size;
             else{
@@ -37,6 +41,7 @@ public class OpenTheStore implements Job  {
         }
         return 0;
     }
+    //returns i!
     private int fact(int i){
         if (i == 1) return 1;
         else return fact(i-1) * i;
@@ -49,55 +54,53 @@ public class OpenTheStore implements Job  {
         Random rand = new Random();
         int countItemsSold = 0;
         int countItemsBought = 0;
-
+        //generates random number of buyers according to poisson distribution
         int buyers = getRandomBuyersPoisson(4, 8) + 2;
         int sellers = rand.nextInt(4 - 1) + 1;
+        //removes hat and shirt from class list if out of stock so customers no longer look for it.
+
         System.out.println("number of buyers in store " + buyers);
         for (int i=0; i<buyers; i++) {
             String randSubtype = inv.getStringSubtype();
-            ItemDecorator itemDecorator = inv.getItemSubtype(randSubtype);
-            if (itemDecorator != null) {
+            Item item = inv.getItemSubtype(randSubtype);
+            if (item != null) {
                 double listChance = rand.nextDouble();
                 if (listChance < 0.5) {
-                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", itemDecorator.getListPrice()) + "$ to Customer " + i);
-                    s.setCashReg(s.getCashReg() + itemDecorator.getListPrice());
-                    inv.addSold(itemDecorator);
-                    inv.removeMerch(itemDecorator);
+                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", item.getListPrice()) + "$ to Customer " + i);
+                    s.setCashReg(s.getCashReg() + item.getListPrice());
+                    inv.addSold(item);
+                    inv.removeMerch(item);
                     countItemsSold += 1;
                 } else {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
-                        double discountPrice = itemDecorator.getListPrice() * 0.9f;
+                        double discountPrice = item.getListPrice() * 0.9f;
                         System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(14) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
-
-
-
-                        inv.addSold(itemDecorator);
-                        inv.removeMerch(itemDecorator);
+                        inv.addSold(item);
+                        inv.removeMerch(item);
                         countItemsSold += 1;
                     }
                 }
             } else {
-                System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(14) + " but none were in inventory, so they left");
+                System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(5) + " but none were in inventory, so they left");
             }
             double chanceOfSelling = rand.nextDouble();
 
         }
         notifyObservers(countItemsSold+" items sold.");
-
         for (int i=0; i<sellers; i++) {
             String randSubtype = inv.getStringSubtype();
-            ItemDecorator itemDecorator = inv.createItem(randSubtype);
+            Item item = inv.createItem(randSubtype);
 
-            int min = 1+ itemDecorator.getItemCondition();
-            int max = 6+ itemDecorator.getItemCondition();
+            int min = 1+ item.getItemCondition();
+            int max = 6+ item.getItemCondition();
             int askPrice = rand.nextInt(max - min) + min;
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
                 System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(14)+" for "+askPrice+"$");
-                inv.addMerch(itemDecorator);
+                inv.addMerch(item);
                 countItemsBought += 1;
             }
             else {
@@ -105,7 +108,7 @@ public class OpenTheStore implements Job  {
                 buyChance = rand.nextDouble();
                 if (buyChance < 0.75) {
                     System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(14)+" for "+askPrice+"$ after a 10% increase.");
-                    inv.addMerch(itemDecorator);
+                    inv.addMerch(item);
                     countItemsBought += 1;
                 }
                 else {

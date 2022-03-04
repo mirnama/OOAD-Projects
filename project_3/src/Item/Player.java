@@ -1,6 +1,6 @@
 package Item;
 
-public class Player extends ItemDecorator {
+public class Player extends Item {
     private boolean equalized;
 
 

@@ -19,7 +19,7 @@ public class DoInventory implements Job {
         boolean ordered = false;
         String className = "";
         int countOrders = 0;
-        ArrayList<ItemDecorator> merch = inventory.getMerchandise();
+        ArrayList<Item> merch = inventory.getMerchandise();
         //for loop that tunes all items in the merchandise
         for (int i = 0; i < merch.size(); i++){
             if (inventory.isStringed(merch.get(i)))
@@ -29,7 +29,16 @@ public class DoInventory implements Job {
             else if (inventory.isPlayer(merch.get(i)) )
                 ((Clerk)p).getTune().do_tune((Player)(merch.get(i)));
         }
-        for(String subtype : inventory.getClassNames()) {
+        //removes shirt and hat if we no longer have either
+        if(!s.getInventory().subtypeExists("Item.Hat")){
+            s.getInventory().removeItemSubtype("Item.Hat");
+        }
+        if(!s.getInventory().subtypeExists("Item.Shirt")){
+            s.getInventory().removeItemSubtype("Item.Shirt");
+        }
+
+        //}
+        for(String subtype : inventory.getSellingClassNames()) {
             found = inventory.subtypeExists(subtype);
             ordered = false;
             //if class name is not found we place an order for an item of that class
@@ -51,6 +60,7 @@ public class DoInventory implements Job {
         notifyObservers("$"+inventory.sumPurchasePrice()+" sum purchase price in inventory.");
         notifyObservers(countOrders+" orders placed.");
     }
+
     public void registerObserver(Logger o) {
         obs = o;
     }

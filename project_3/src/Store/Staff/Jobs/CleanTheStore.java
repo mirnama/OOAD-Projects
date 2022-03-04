@@ -26,18 +26,18 @@ public class CleanTheStore implements Job  {
         if (sizeInv>0){
             if (breakChance < p.getDamagePercetage()) {
                 int r = rand.nextInt(inventory.getMerchandise().size());
-                ItemDecorator itemDecorator = inventory.getMerchandise().get(r);
+                Item item = inventory.getMerchandise().get(r);
 
-                int itemCond = itemDecorator.getItemCondition();
+                int itemCond = item.getItemCondition();
                 if (itemCond==1) {
-                    System.out.println("Oops, " + p.getEmployeeName() + " broke a " + itemDecorator.getItemName());
-                    inventory.getMerchandise().remove(itemDecorator);
+                    System.out.println("Oops, " + p.getEmployeeName() + " broke a " + item.getItemName());
+                    inventory.getMerchandise().remove(item);
                     countDamaged += 1;
                 }
                 else {
-                    itemDecorator.setItemCondition(itemCond--);
-                    System.out.println("Oops, " + p.getEmployeeName() + " hurt a " + itemDecorator.getItemName());
-                    System.out.println(itemDecorator.getItemName()+" is now condition " + itemCond--);
+                    item.setItemCondition(itemCond--);
+                    System.out.println("Oops, " + p.getEmployeeName() + " hurt a " + item.getItemName());
+                    System.out.println(item.getItemName()+" is now condition " + itemCond--);
                     countDamaged += 1;
                 }
             }
