@@ -24,7 +24,7 @@ public class PlaceAnOrder implements Job{
         float purchasePrice = ret.get(0);
         float arrivalDate = ret.get(1);
 
-        System.out.println(p.getEmployeeName() + " bought 3 " + subtype.substring(5) + " for: " +  String.format("%.2f", purchasePrice) + " and the order will be here in " + arrivalDate + " days.");
+        System.out.println(p.getEmployeeName() + " bought 3 " + subtype + " for: " +  String.format("%.2f", purchasePrice) + " and the order will be here in " + arrivalDate + " days.");
     }
 
     public void registerObserver(Logger o) {

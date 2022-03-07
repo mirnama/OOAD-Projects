@@ -19,12 +19,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Thomas Decorator">
-      <change afterPath="$PROJECT_DIR$/src/Item/Decorator/SellGigBag.java" afterDir="false" />
+    <list default="true" id="83b86cb0-126f-4377-a96a-70702bb5dfd4" name="Changes" comment="Created Optional sales Decorator">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/logs_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/logs_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item/Decorator/SaleAccessory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Accessories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Bandanas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Bandanas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Bass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Bass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/CD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Cable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Cable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Clothing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Flute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Flute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Guitar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Guitar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Harmonica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Harmonica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Hat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Hat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Instrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Instrument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Mandolin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/PracticeAmps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/RecordPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Saxophone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Shirt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Stringed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Strings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Vinyl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Item/Wind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Jobs/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Staff/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_3/Store/Store.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Item/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item/OptionalSalesDecorater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/OpenTheStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Staff/Jobs/PlaceAnOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Staff/Jobs/PlaceAnOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +127,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="project_3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -112,6 +134,13 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="project_3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -276,59 +305,5 @@
     <MESSAGE value="new inventories" />
     <MESSAGE value="Thomas Decorator" />
     <option name="LAST_COMMIT_MESSAGE" value="Thomas Decorator" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="165" y="11" key="#Project_Structure" timestamp="1646171723298">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="165" y="11" key="#Project_Structure/0.0.1368.872@0.0.1368.872" timestamp="1646171723298" />
-    <state x="468" y="331" width="431" height="215" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1646172958566">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="468" y="331" width="431" height="215" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1646172958566" />
-    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1646172352345">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="327" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1646172352345" />
-    <state x="415" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646172040422">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="415" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1368.872@0.0.1368.872" timestamp="1646172040422" />
-    <state width="1326" height="367" key="GridCell.Tab.0.bottom" timestamp="1646267485672">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
-    <state width="1326" height="367" key="GridCell.Tab.0.center" timestamp="1646267485672">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
-    <state width="1326" height="367" key="GridCell.Tab.0.left" timestamp="1646267485672">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
-    <state width="1326" height="367" key="GridCell.Tab.0.right" timestamp="1646267485672">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1646267485672" />
-    <state width="1326" height="367" key="GridCell.Tab.1.bottom" timestamp="1646267485374">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
-    <state width="1326" height="367" key="GridCell.Tab.1.center" timestamp="1646267485374">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
-    <state width="1326" height="367" key="GridCell.Tab.1.left" timestamp="1646267485374">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
-    <state width="1326" height="367" key="GridCell.Tab.1.right" timestamp="1646267485374">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state width="1326" height="367" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1646267485374" />
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1646267200313">
-      <screen x="0" y="0" width="1368" height="872" />
-    </state>
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1646267200313" />
   </component>
 </project>
