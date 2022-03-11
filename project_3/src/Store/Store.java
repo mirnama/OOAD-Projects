@@ -21,6 +21,8 @@ package Store;
 import Store.Obersvables.ConcreteLogger;
 import Store.Staff.*;
 import Store.Obersvables.*;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import Item.Inventory;
@@ -37,6 +39,7 @@ public class Store implements StoreInterface {
     -dayCount: int
     -customerCont: int
      */
+    private String name;
     private Inventory inventory = new Inventory();
     protected double cashReg;
     private int dayCount;
@@ -45,10 +48,11 @@ public class Store implements StoreInterface {
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
 
 
-    public Store() {
+    public Store(String name) {
         this.staffMembers.add(new Clerk("Velma", 5));
         this.staffMembers.add(new Clerk("Shaggy", 20));
         this.staffMembers.add(new Clerk("Daphne", 10));
+        this.name = name;
         // merchandise.add(s1);
     }
     public double getCashReg ( ) {
@@ -75,6 +79,7 @@ public class Store implements StoreInterface {
     public void setTotalBankWithdrawl (int totalBankWithdrawlSet) { // I put set in the end to now which one the new var just a style we could change it
         this.totalBankWithdrawl = totalBankWithdrawlSet;
     }
+    public String getName() {return this.name;}
 
     public ArrayList < Staff > getWorkingStaff ( ) {
         return workingStaff;
