@@ -115,8 +115,8 @@ public class Inventory { // singleton
     }
     public Item getItemSubtype(String className) {
         for (int j = 0; j < this.merchandise.size(); j++) {
-            String className = this.merchandise.get(j).getClass().getName();
-            if (className.equals(DesiredclassName)) {
+            String itemClass = this.merchandise.get(j).getClass().getName();
+            if (itemClass.equals(className)) {
                 return this.merchandise.get(j);
             }
         }
