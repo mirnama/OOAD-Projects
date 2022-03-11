@@ -47,7 +47,7 @@ public class Inventory { // singleton
         this.merchandise.add(new CassettePlayer("Sony",5,50,60,56));
         this.merchandise.add(new CassettePlayer("Carplay",1,450,550,543));
         this.merchandise.add(new CassettePlayer("cassette",5,50,58,56));
-        //list of all the class types currently in the store
+        // list of all the class types currently in the store
         this.classNames.add("Item.Bandanas");
         this.classNames.add("Item.Cable");
         this.classNames.add("Item.Flute");
