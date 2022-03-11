@@ -6,17 +6,19 @@ import java.util.ArrayList;
 
 public class OptionalSalesDecorater implements OptionalSales {
     private double chanceOfSelling;
-    private ItemDecorator i;
+    private Item i;
 
     public OptionalSalesDecorater (double chanceOfSelling) {
-        ItemDecorator item = null;
+        Item
+                item = null;
         this.chanceOfSelling = chanceOfSelling;
         this.i=item;
     }
 
-    public ItemDecorator getI (Store s, Staff p ) {
+    public Item getI (Store s, Staff p ) {
         Inventory inv = s.getInventory();
         String itemDecorator =i.getClass().getName();
+
 
         if (itemDecorator.getClass().getName().equals("Stringed")) {
             if (chanceOfSelling < 0.20) {
@@ -57,7 +59,7 @@ public class OptionalSalesDecorater implements OptionalSales {
     }
 
     @Override
-    public ArrayList < ItemDecorator > getSoldItems ( ) {
+    public ArrayList < Item > getSoldItems ( ) {
 
         return null;
     }
