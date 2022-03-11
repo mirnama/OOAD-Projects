@@ -13,6 +13,7 @@ public class Inventory { // singleton
     private ArrayList<Item> soldItems = new ArrayList<Item>();
     private ArrayList<Order> orders = new ArrayList<Order>();
     private ArrayList<String> classNames = new ArrayList<String>();
+    private ArrayList<String> sellingClassNames = new ArrayList<String>();
 
 
     public Inventory() {
@@ -46,27 +47,46 @@ public class Inventory { // singleton
         this.merchandise.add(new CassettePlayer("Sony",5,50,60,56));
         this.merchandise.add(new CassettePlayer("Carplay",1,450,550,543));
         this.merchandise.add(new CassettePlayer("cassette",5,50,58,56));
-
-        this.classNames.add("ItemDecorator.Bandanas");
-        this.classNames.add("ItemDecorator.Cable");
-        this.classNames.add("ItemDecorator.Flute");
-        this.classNames.add("ItemDecorator.Guitar");
-        this.classNames.add("ItemDecorator.Harmonica");
-        this.classNames.add("ItemDecorator.Hat");
-        this.classNames.add("ItemDecorator.Mandolin");
-        this.classNames.add("ItemDecorator.PracticeAmps");
-        this.classNames.add("ItemDecorator.Shirt");
-        this.classNames.add("ItemDecorator.Strings");
-        this.classNames.add("ItemDecorator.CD");
-        this.classNames.add("ItemDecorator.MP3Players");
-        this.classNames.add("ItemDecorator.CdPlayers");
-        this.classNames.add("ItemDecorator.Vinyl");
-        this.classNames.add("ItemDecorator.Bass");
-        this.classNames.add("ItemDecorator.RecordPlayer");
-        this.classNames.add("ItemDecorator.Saxophone");
-        this.classNames.add("ItemDecorator.Cassette");
-        this.classNames.add("ItemDecorator.CassettePlayer");
-        this.classNames.add("ItemDecorator.GigBag");
+        //list of all the class types currently in the store
+        this.classNames.add("Item.Bandanas");
+        this.classNames.add("Item.Cable");
+        this.classNames.add("Item.Flute");
+        this.classNames.add("Item.Guitar");
+        this.classNames.add("Item.Harmonica");
+        this.classNames.add("Item.Hat");
+        this.classNames.add("Item.Mandolin");
+        this.classNames.add("Item.PracticeAmps");
+        this.classNames.add("Item.Shirt");
+        this.classNames.add("Item.Strings");
+        this.classNames.add("Item.CD");
+        this.classNames.add("Item.MP3Players");
+        this.classNames.add("Item.CdPlayers");
+        this.classNames.add("Item.Vinyl");
+        this.classNames.add("Item.Bass");
+        this.classNames.add("Item.RecordPlayer");
+        this.classNames.add("Item.Saxophone");
+        this.classNames.add("Item.Cassette");
+        this.classNames.add("Item.CassettePlayer");
+        this.classNames.add("Item.GigBag");
+        //list of all the class types we are currently buying
+        this.sellingClassNames.add("Item.Bandanas");
+        this.sellingClassNames.add("Item.Cable");
+        this.sellingClassNames.add("Item.Flute");
+        this.sellingClassNames.add("Item.Guitar");
+        this.sellingClassNames.add("Item.Harmonica");
+        this.sellingClassNames.add("Item.Mandolin");
+        this.sellingClassNames.add("Item.PracticeAmps");
+        this.sellingClassNames.add("Item.Strings");
+        this.sellingClassNames.add("Item.CD");
+        this.sellingClassNames.add("Item.MP3Players");
+        this.sellingClassNames.add("Item.CdPlayers");
+        this.sellingClassNames.add("Item.Vinyl");
+        this.sellingClassNames.add("Item.Bass");
+        this.sellingClassNames.add("Item.RecordPlayer");
+        this.sellingClassNames.add("Item.Saxophone");
+        this.sellingClassNames.add("Item.Cassette");
+        this.sellingClassNames.add("Item.CassettePlayer");
+        this.sellingClassNames.add("Item.GigBag");
     }
     public ArrayList <Item> getSoldItems() {return soldItems;}
     public ArrayList <Item> getMerchandise ( ) { // needs to be type ItemDecorator
@@ -95,18 +115,27 @@ public class Inventory { // singleton
     }
     public Item getItemSubtype(String className) {
         for (int j = 0; j < this.merchandise.size(); j++) {
-            className = this.merchandise.get(j).getClass().getName();
-            if (className.equals(className)) {
+            String className = this.merchandise.get(j).getClass().getName();
+            if (className.equals(DesiredclassName)) {
                 return this.merchandise.get(j);
             }
         }
         return null;
     }
+    public ArrayList<String> getSellingClassNames(){return sellingClassNames;}
     public ArrayList<String> getClassNames() {
         return classNames;
     }
     public void addMerch(Item i) {
         this.merchandise.add(i);
+    }
+    public void removeItemSubtype(String s){
+        for (int i = 0; i < classNames.size(); i++){
+            if (classNames.get(i).equals(s)) {
+                classNames.remove(i);
+                break;
+            }
+        }
     }
     public ArrayList<Float> addOrder(String subtype, Store s, int num) {
         int arrivalDate = (int)Math.random() * 3 + 1;
@@ -118,70 +147,69 @@ public class Inventory { // singleton
 
         for (int i=0; i<num; i++) {
             switch (subtype) {
-                case "ItemDecorator.Bandanas":
+                case "Item.Bandanas":
                     orders.add(new Order(new Bandanas("green Bandana", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Cable":
+                case "Item.Cable":
                     orders.add(new Order(new Cable(2, "green cable", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Flute":
+                case "Item.Flute":
                     orders.add(new Order(new Flute("standard", "green flute", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Guitar":
+                case "Item.Guitar":
                     orders.add(new Order(new Guitar(true, "green electric guitar", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Harmonica":
+                case "Item.Harmonica":
                     orders.add(new Order(new Harmonica("G", "Harmonica for kids", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Hat":
-                    orders.add(new Order(new Hat(1, "Blue Hat", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
-                    s.setCashReg(s.getCashReg() - purchasePrice);
-                    break;
-                case "ItemDecorator.Mandolin":
+                case "Item.Mandolin":
                     orders.add(new Order(new Mandolin(false, "Mandolin for kids", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.PracticeAmps":
+                case "Item.PracticeAmps":
                     orders.add(new Order(new PracticeAmps(100, "Practice amps super", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Shirt":
-                    orders.add(new Order(new Shirt(3, "Metallica Shirt", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
-                    s.setCashReg(s.getCashReg() - purchasePrice);
-                    break;
-                case "ItemDecorator.Strings":
+                case "Item.Strings":
                     orders.add(new Order(new Strings("guitar String", "Guitar G String", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.CD":
+                case "Item.CD":
                     orders.add(new Order(new CD("Green day CD", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.MP3Players":
+                case "Item.MP3Players":
                     orders.add(new Order(new MP3Players("Ipod nano", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.CdPlayers":
+                case "Item.CdPlayers":
                     orders.add(new Order(new CdPlayers("Silver CD player", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Vinyl":
+                case "Item.Vinyl":
                     orders.add(new Order(new Vinyl("Vinyl Record", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.Bass":
+                case "Item.Bass":
                     orders.add(new Order(new Bass(true, "Electric Bass", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
-                case "ItemDecorator.RecordPlayer":
+                case "Item.RecordPlayer":
                     orders.add(new Order(new RecordPlayer("Black Record Player", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
                     s.setCashReg(s.getCashReg() - purchasePrice);
                     break;
+                case "Item.GigBag":
+                    orders.add(new Order(new GigBag("Black Gig Bag", 10, purchasePrice, purchasePrice * 1.2f, purchasePrice * 1.2f), arrivalDate, s));
+                    s.setCashReg(s.getCashReg() - purchasePrice);
+                    break;
+                default:
+                    break;
+
             }
             ret.set(0,ret.get(0)+purchasePrice);
         }
@@ -252,6 +280,11 @@ public class Inventory { // singleton
 
         }
         return item;
+    }
+    public String getStringSellingSubtype(){
+        Random rand = new Random();
+        String randSubtype = this.sellingClassNames.get(rand.nextInt(this.getSellingClassNames().size()));
+        return randSubtype;
     }
     public String getStringSubtype() {
         Random rand = new Random();
