@@ -47,46 +47,46 @@ public class Inventory { // singleton
         this.merchandise.add(new CassettePlayer("Sony",5,50,60,56));
         this.merchandise.add(new CassettePlayer("Carplay",1,450,550,543));
         this.merchandise.add(new CassettePlayer("cassette",5,50,58,56));
-        //list of all the class types currently in the store
-        this.classNames.add("Bandanas");
-        this.classNames.add("Cable");
-        this.classNames.add("Flute");
-        this.classNames.add("Guitar");
-        this.classNames.add("Harmonica");
-        this.classNames.add("Hat");
-        this.classNames.add("Mandolin");
-        this.classNames.add("PracticeAmps");
-        this.classNames.add("Shirt");
-        this.classNames.add("Strings");
-        this.classNames.add("CD");
-        this.classNames.add("MP3Players");
-        this.classNames.add("CdPlayers");
-        this.classNames.add("Vinyl");
-        this.classNames.add("Bass");
-        this.classNames.add("RecordPlayer");
-        this.classNames.add("Saxophone");
-        this.classNames.add("Cassette");
-        this.classNames.add("CassettePlayer");
-        this.classNames.add("GigBag");
+        // list of all the class types currently in the store
+        this.classNames.add("Item.Bandanas");
+        this.classNames.add("Item.Cable");
+        this.classNames.add("Item.Flute");
+        this.classNames.add("Item.Guitar");
+        this.classNames.add("Item.Harmonica");
+        this.classNames.add("Item.Hat");
+        this.classNames.add("Item.Mandolin");
+        this.classNames.add("Item.PracticeAmps");
+        this.classNames.add("Item.Shirt");
+        this.classNames.add("Item.Strings");
+        this.classNames.add("Item.CD");
+        this.classNames.add("Item.MP3Players");
+        this.classNames.add("Item.CdPlayers");
+        this.classNames.add("Item.Vinyl");
+        this.classNames.add("Item.Bass");
+        this.classNames.add("Item.RecordPlayer");
+        this.classNames.add("Item.Saxophone");
+        this.classNames.add("Item.Cassette");
+        this.classNames.add("Item.CassettePlayer");
+        this.classNames.add("Item.GigBag");
         //list of all the class types we are currently buying
-        this.sellingClassNames.add("Bandanas");
-        this.sellingClassNames.add("Cable");
-        this.sellingClassNames.add("Flute");
-        this.sellingClassNames.add("Guitar");
-        this.sellingClassNames.add("Harmonica");
-        this.sellingClassNames.add("Mandolin");
-        this.sellingClassNames.add("PracticeAmps");
-        this.sellingClassNames.add("Strings");
-        this.sellingClassNames.add("CD");
-        this.sellingClassNames.add("MP3Players");
-        this.sellingClassNames.add("CdPlayers");
-        this.sellingClassNames.add("Vinyl");
-        this.sellingClassNames.add("Bass");
-        this.sellingClassNames.add("RecordPlayer");
-        this.sellingClassNames.add("Saxophone");
-        this.sellingClassNames.add("Cassette");
-        this.sellingClassNames.add("CassettePlayer");
-        this.sellingClassNames.add("GigBag");
+        this.sellingClassNames.add("Item.Bandanas");
+        this.sellingClassNames.add("Item.Cable");
+        this.sellingClassNames.add("Item.Flute");
+        this.sellingClassNames.add("Item.Guitar");
+        this.sellingClassNames.add("Item.Harmonica");
+        this.sellingClassNames.add("Item.Mandolin");
+        this.sellingClassNames.add("Item.PracticeAmps");
+        this.sellingClassNames.add("Item.Strings");
+        this.sellingClassNames.add("Item.CD");
+        this.sellingClassNames.add("Item.MP3Players");
+        this.sellingClassNames.add("Item.CdPlayers");
+        this.sellingClassNames.add("Item.Vinyl");
+        this.sellingClassNames.add("Item.Bass");
+        this.sellingClassNames.add("Item.RecordPlayer");
+        this.sellingClassNames.add("Item.Saxophone");
+        this.sellingClassNames.add("Item.Cassette");
+        this.sellingClassNames.add("Item.CassettePlayer");
+        this.sellingClassNames.add("Item.GigBag");
     }
     public ArrayList <Item> getSoldItems() {return soldItems;}
     public ArrayList <Item> getMerchandise ( ) { // needs to be type ItemDecorator
@@ -115,8 +115,8 @@ public class Inventory { // singleton
     }
     public Item getItemSubtype(String className) {
         for (int j = 0; j < this.merchandise.size(); j++) {
-             className = this.merchandise.get(j).getClass().getName();
-            if (className.equals(className)) {
+            String itemClass = this.merchandise.get(j).getClass().getName();
+            if (itemClass.equals(className)) {
                 return this.merchandise.get(j);
             }
         }

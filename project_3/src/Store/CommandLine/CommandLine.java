@@ -14,17 +14,29 @@ public class CommandLine {
     public CommandLine (ArrayList<Store> ss) {
         actions = new ArrayList<Command>();
         actions.add(new CommandSelectStore());
+        actions.add(new CommandClerkName());
+        actions.add(new CommandClerkTime());
+        actions.add(new CommandSellItem());
+        actions.add(new CommandBuyItem());
+        actions.add(new CommandBuyCustomKit());
+        actions.add(new CommandEndInteractions());
         stores = ss;
         currentStore = ss.get(0);
     }
 
     public void display(){
-        while (true) {
+        boolean flag = true;
+        while (flag) {
             for (int i=0; i< actions.size(); i++) {
                 System.out.println("("+i+") "+actions.get(i).getDef());
             }
             int action = readInput();
-            actions.get(action).execute(this.currentStore, this);
+            if (action==6) {
+                flag=false;
+            }
+            else {
+                actions.get(action).execute(this.currentStore, this);
+            }
         }
 
     }

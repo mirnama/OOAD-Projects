@@ -66,7 +66,7 @@ public class OpenTheStore implements Job  {
             if (item != null) {
                 double listChance = rand.nextDouble();
                 if (listChance < 0.5) {
-                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype + " for " + String.format("%.2f", item.getListPrice()) + "$ to Customer " + i);
+                    System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + String.format("%.2f", item.getListPrice()) + "$ to Customer " + i);
                     s.setCashReg(s.getCashReg() + item.getListPrice());
                     inv.addSold(item);
                     inv.removeMerch(item);
@@ -75,7 +75,7 @@ public class OpenTheStore implements Job  {
                     double discountChance = rand.nextDouble();
                     if (discountChance < 0.25) {
                         double discountPrice = item.getListPrice() * 0.9f;
-                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
+                        System.out.println(p.getEmployeeName() + " sold a " + randSubtype.substring(5) + " for " + String.format("%.2f", discountPrice) + "$ after a 10% discount to Customer " + i);
                         s.setCashReg(s.getCashReg() + discountPrice);
                         inv.addSold(item);
                         inv.removeMerch(item);
@@ -83,7 +83,7 @@ public class OpenTheStore implements Job  {
                     }
                 }
             } else {
-                System.out.println("Customer " + i + " wanted to buy a " + randSubtype + " but none were in inventory, so they left");
+                System.out.println("Customer " + i + " wanted to buy a " + randSubtype.substring(5) + " but none were in inventory, so they left");
             }
             double chanceOfSelling = rand.nextDouble();
 
@@ -99,7 +99,7 @@ public class OpenTheStore implements Job  {
             double buyChance = rand.nextDouble();
 
             if (buyChance < 0.5) {
-                System.out.println(p.getEmployeeName()+" bought a "+randSubtype+" for "+askPrice+"$");
+                System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$");
                 inv.addMerch(item);
                 countItemsBought += 1;
             }
@@ -107,7 +107,7 @@ public class OpenTheStore implements Job  {
                 askPrice *= 1.1;
                 buyChance = rand.nextDouble();
                 if (buyChance < 0.75) {
-                    System.out.println(p.getEmployeeName()+" bought a "+randSubtype+" for "+askPrice+"$ after a 10% increase.");
+                    System.out.println(p.getEmployeeName()+" bought a "+randSubtype.substring(5)+" for "+askPrice+"$ after a 10% increase.");
                     inv.addMerch(item);
                     countItemsBought += 1;
                 }
