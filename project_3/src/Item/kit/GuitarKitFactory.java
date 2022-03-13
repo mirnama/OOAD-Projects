@@ -6,12 +6,14 @@ public class GuitarKitFactory extends AbstractGuitarKitFactory  {
     private GuitarCover cover;
     private GuitarPickGuard guard;
     private GuitarPickup pickUp;
+    //returns price of guitar kit
     public double getPrice() {
         return bridge.getPrice() + knobSet.getPrice() + cover.getPrice() + guard.getPrice() + pickUp.getPrice();
     }
     public GuitarKitFactory(){
     }
-
+    //creates all components and makes guitar kit into an item
+    //1 for basic, 2 for standard, 3 for legendary on types
     @Override
     public Item getGuitarKit(int pickupType, int pickGuardType, int knobsetType, int coverType, int bridgeType) {
         bridge = createBridge(bridgeType);
@@ -20,6 +22,7 @@ public class GuitarKitFactory extends AbstractGuitarKitFactory  {
         guard = createGuitarPickGuard(pickGuardType);
         pickUp = createGuitarPickup(pickupType);
         System.out.println(pickUp.getPrice());
+
         return new GuitarKit(this.getPrice());
     }
 
