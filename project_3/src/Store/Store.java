@@ -18,6 +18,7 @@ package Store;
  *
  */
 
+import Item.kit.GuitarKitFactory;
 import Store.Obersvables.ConcreteLogger;
 import Store.Staff.*;
 import Store.Obersvables.*;
@@ -43,6 +44,7 @@ public class Store implements StoreInterface {
     private Inventory inventory = new Inventory();
     protected double cashReg;
     private int dayCount;
+    private GuitarKitFactory factory = null;
     private int customerCount, totalBankWithdrawl;
     protected ArrayList<Staff> workingStaff = new ArrayList<Staff>(); // Velma or Shaggy
     private ArrayList<Staff> staffMembers = new ArrayList<Staff>(); // Velma, Shaggy
@@ -53,6 +55,9 @@ public class Store implements StoreInterface {
         this.staffMembers.add(new Clerk("Shaggy", 20));
         this.staffMembers.add(new Clerk("Daphne", 10));
         this.name = name;
+        if (name.equals("Northside")){
+            factory = new GuitarKitFactory();
+        }
         // merchandise.add(s1);
     }
     public double getCashReg ( ) {
@@ -69,6 +74,10 @@ public class Store implements StoreInterface {
     }
     public int getCustomerCount ( ) {
         return customerCount;
+    }
+
+    public GuitarKitFactory getGuitarKitFactory() {
+        return factory;
     }
     public void setCustomerCount (int customerCountSet) { // I put set in the end to now which one the new var just a style we could change it
         this.customerCount = customerCountSet;
